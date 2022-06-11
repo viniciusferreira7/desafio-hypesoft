@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './styles/global-styles';
 import { theme } from './styles/theme';
 
-import Home from './templetes/App';
+import { Home } from './templetes/Home';
 
 const root = createRoot(document.getElementById('root'));
 

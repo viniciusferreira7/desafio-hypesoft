@@ -1,10 +1,10 @@
-import { Heading } from '.';
+import { Header } from '.';
 
 export default {
-  title: 'Heading',
-  component: Heading,
+  title: 'Header',
+  component: Header,
   args: {
-    children: 'Heading',
+    children: 'Header',
   },
   argsTypes: {
     children: { type: 'string' },
@@ -14,7 +14,7 @@ export default {
 export const Templetes = (args) => {
   return (
     <div>
-      <Heading {...args} />
+      <Header {...args} />
     </div>
   );
 };
