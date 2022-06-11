@@ -9,12 +9,6 @@ export default {
     links_3: 'works',
     links_4: 'contact',
   },
-  argsTypes: {
-    links_1: { type: 'string' },
-    links_2: { type: 'string' },
-    links_3: { type: 'string' },
-    links_4: { type: 'string' },
-  },
 };
 
 export const Templetes = (args) => {

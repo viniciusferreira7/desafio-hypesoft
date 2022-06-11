@@ -1,14 +1,10 @@
 import { Header } from '.';
+import data from './data';
 
 export default {
   title: 'Header',
   component: Header,
-  args: {
-    children: 'Header',
-  },
-  argsTypes: {
-    children: { type: 'string' },
-  },
+  args: data,
 };
 
 export const Templetes = (args) => {

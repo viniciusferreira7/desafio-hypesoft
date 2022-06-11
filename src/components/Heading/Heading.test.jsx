@@ -11,26 +11,15 @@ describe('<Heading/>', () => {
 
     expect(heading).toHaveStyle({
       color: theme.colors.white,
-      'font-size': theme.font.sizes.xlarge,
-      'text-transform': 'none',
-    });
-  });
-
-  it('should render with white color', () => {
-    renderTheme(<Heading colorDark>Texto</Heading>);
-    const heading = screen.getByRole('heading', { name: 'Texto' });
-
-    expect(heading).toHaveStyle({
-      color: theme.colors.primaryColor,
     });
   });
 
   it('should render with correct heading sizes', () => {
-    const { rerender } = renderTheme(<Heading size="small">Texto</Heading>);
+    const { rerender } = renderTheme(<Heading size="medium">Texto</Heading>);
     const heading = screen.getByRole('heading', { name: 'Texto' });
 
     expect(heading).toHaveStyle({
-      'font-size': theme.font.sizes.medium,
+      'font-size': theme.font.sizes.large,
     });
 
     rerender(
@@ -50,7 +39,7 @@ describe('<Heading/>', () => {
     );
 
     expect(heading).toHaveStyle({
-      'font-size': theme.font.sizes.xlarge,
+      'font-size': theme.font.sizes.xxlarge,
     });
 
     rerender(
@@ -73,21 +62,21 @@ describe('<Heading/>', () => {
     });
   });
 
-  it('should render with uppercase letters', () => {
-    const { rerender } = renderTheme(<Heading upperCase={true}>Texto</Heading>);
+  it('should render with bold', () => {
+    const { rerender } = renderTheme(<Heading bold>Texto</Heading>);
     const heading = screen.getByRole('heading', { name: 'Texto' });
 
     expect(heading).toHaveStyle({
-      'text-transform': 'uppercase',
+      'font-weight': '500',
     });
 
     rerender(
       <ThemeProvider theme={theme}>
-        <Heading upperCase={false}>Texto</Heading>
+        <Heading bold={false}>Texto</Heading>
       </ThemeProvider>,
     );
     expect(heading).toHaveStyle({
-      'text-transform': 'none',
+      'font-weight': '400',
     });
   });
 

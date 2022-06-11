@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextComponent/> should math snapshot 1`] = `
+.c0 {
+  font-size: 2.0rem;
+  color: #A5A5A5;
+  padding: 3.2rem;
+}
+
+<div>
+  <p
+    class="c0"
+  >
+    Texto
+  </p>
+</div>
+`;

@@ -3,9 +3,13 @@ import styled, { css } from 'styled-components';
 const titleSize = {
   small: (theme) =>
     css`
-      font-size: ${theme.font.sizes.large};
+      font-size: ${theme.font.sizes.medium};
     `,
   medium: (theme) =>
+    css`
+      font-size: ${theme.font.sizes.large};
+    `,
+  large: (theme) =>
     css`
       font-size: ${theme.font.sizes.xlarge};
     `,
@@ -27,8 +31,13 @@ const mediaFont = (theme) => css`
 `;
 
 export const Title = styled.h1`
-  ${({ theme, size }) => css`
+  ${({ theme, size, bold }) => css`
     color: ${theme.colors.white};
+    font-weight:${bold ? 500 : 400};
     ${titleSize[size](theme)};
+
+    > span {
+      color: ${theme.colors.secondaryColor};
+    }
   `}
 `;

@@ -1,12 +1,12 @@
 import React from 'react';
+import { Header } from '../../components/Header';
 import * as Styled from './styles';
+import data from '../../components/Header/data';
 
 export const Home = () => {
   return (
-    <div className="App">
-      <Styled.Container>
-        <h2>Hello</h2>
-      </Styled.Container>
-    </div>
+    <Styled.Container>
+      <Header {...data} />
+    </Styled.Container>
   );
 };

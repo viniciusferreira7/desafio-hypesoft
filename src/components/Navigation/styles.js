@@ -7,11 +7,6 @@ const menuVisible = () => css`
 
 export const Container = styled.div`
 ${({ theme, visible }) => css`
-    position:fixed;
-    top: 0;
-    left:0;
-    bottom:0;
-    right:0;
     z-index: 5;
     width:100%;
     padding:2.8rem 0 3.8rem;
@@ -19,6 +14,9 @@ ${({ theme, visible }) => css`
     transition: all 300ms ease-in-out;
 
     @media ${theme.media.lteMedium}{
+      position: absolute;
+      top: 0;
+      left: 0;
       height:100vh;
       visibility:hidden;
       opacity: 0;
@@ -76,10 +74,12 @@ ${({ theme, visible }) => css`
   text-transform: uppercase;
   text-decoration: none;
   padding: 0 4.0rem 2rem 4.0rem;
-  color:${theme.colors.primaryColor};
+  color:${theme.colors.white};
   position:relative;
 
   @media ${theme.media.lteMedium}{
+    padding: ${theme.spacings.xlarge} 0;
+    font-size: ${theme.font.sizes.medium};
     color:${visible ? theme.colors.primaryColor : theme.colors.white}
   }
 

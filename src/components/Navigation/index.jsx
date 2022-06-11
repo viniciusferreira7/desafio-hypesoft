@@ -33,8 +33,8 @@ export const Navigation = ({ links_1, links_2, links_3, links_4 }) => {
 };
 
 Navigation.propTypes = {
-  links_1: P.string.isRequired,
-  links_2: P.string.isRequired,
-  links_3: P.string.isRequired,
-  links_4: P.string.isRequired,
+  links_1: P.string,
+  links_2: P.string,
+  links_3: P.string,
+  links_4: P.string,
 };

@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Navigation/> should match snapshot 1`] = `
+exports[`<Header/> should render link 1`] = `
+.c5 {
+  max-width: 75.8rem;
+}
+
 .c1 {
   display: inline-block;
   vertical-align: middle;
@@ -76,6 +80,16 @@ exports[`<Navigation/> should match snapshot 1`] = `
   width: 50%;
 }
 
+.c6 {
+  color: #ffff;
+  font-weight: 400;
+  font-size: 4.8rem;
+}
+
+.c6 > span {
+  color: #7D00FF;
+}
+
 @media (max-width:768px) {
   .c2 {
     position: absolute;
@@ -125,55 +139,72 @@ exports[`<Navigation/> should match snapshot 1`] = `
 }
 
 <div>
-  <button
-    aria-label="Open/Close menu"
-    class="c0"
-  >
-    <svg
-      aria-hidden="true"
-      aria-label="Open menu"
-      class="c1"
-      fill="currentColor"
-      focusable="false"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M0 0h24v24H0V0z"
-        fill="none"
-      />
-      <path
-        d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
-      />
-    </svg>
-  </button>
   <div
-    class="c2"
+    class=""
   >
-    <nav
-      class="c3"
+    <button
+      aria-label="Open/Close menu"
+      class="c0"
     >
-      <a
-        class="c4"
+      <svg
+        aria-hidden="true"
+        aria-label="Open menu"
+        class="c1"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        link 1
-      </a>
-      <a
-        class="c4"
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+        <path
+          d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+        />
+      </svg>
+    </button>
+    <div
+      class="c2"
+    >
+      <nav
+        class="c3"
       >
-        link 2
-      </a>
-      <a
-        class="c4"
+        <a
+          class="c4"
+        >
+          about
+        </a>
+        <a
+          class="c4"
+        >
+          services
+        </a>
+        <a
+          class="c4"
+        >
+          works
+        </a>
+        <a
+          class="c4"
+        >
+          contact
+        </a>
+      </nav>
+    </div>
+    <div
+      class="c5"
+    >
+      <h1
+        class="c6"
       >
-        link 3
-      </a>
-      <a
-        class="c4"
-      >
-        link 4
-      </a>
-    </nav>
+        Hello, I’m John, a
+        <span>
+           
+          Software Engineer.
+        </span>
+      </h1>
+    </div>
   </div>
 </div>
 `;
