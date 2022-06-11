@@ -5,6 +5,8 @@ export default {
   component: Button,
   args: {
     children: 'Button',
+    background: false,
+    sizes: 1.6,
   },
   argsTypes: {
     children: { type: 'string' },

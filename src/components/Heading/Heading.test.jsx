@@ -15,8 +15,18 @@ describe('<Heading/>', () => {
   });
 
   it('should render with correct heading sizes', () => {
-    const { rerender } = renderTheme(<Heading size="medium">Texto</Heading>);
+    const { rerender } = renderTheme(<Heading size="small">Texto</Heading>);
     const heading = screen.getByRole('heading', { name: 'Texto' });
+
+    expect(heading).toHaveStyle({
+      'font-size': theme.font.sizes.medium,
+    });
+
+    rerender(
+      <ThemeProvider theme={theme}>
+        <Heading size="medium">Texto</Heading>
+      </ThemeProvider>,
+    );
 
     expect(heading).toHaveStyle({
       'font-size': theme.font.sizes.large,
@@ -32,6 +42,15 @@ describe('<Heading/>', () => {
       'font-size': theme.font.sizes.large,
     });
 
+    rerender(
+      <ThemeProvider theme={theme}>
+        <Heading size="large">Texto</Heading>
+      </ThemeProvider>,
+    );
+
+    expect(heading).toHaveStyle({
+      'font-size': theme.font.sizes.xlarge,
+    });
     rerender(
       <ThemeProvider theme={theme}>
         <Heading size="big">Texto</Heading>
@@ -77,6 +96,15 @@ describe('<Heading/>', () => {
     );
     expect(heading).toHaveStyle({
       'font-weight': '400',
+    });
+  });
+
+  it('should render with color', () => {
+    renderTheme(<Heading color="#FFFFF">Texto</Heading>);
+    const heading = screen.getByRole('heading', { name: 'Texto' });
+
+    expect(heading).toHaveStyle({
+      color: '#FFFFF',
     });
   });
 

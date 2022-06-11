@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.button`
-${({ theme, background }) => css`
+${({ theme, background, sizes }) => css`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -11,7 +11,7 @@ ${({ theme, background }) => css`
   text-transform: uppercase;
   background:${background ? theme.colors.secondaryColor : theme.colors.white};
   color:${background ? theme.colors.white : theme.colors.primaryColor};
-  font-size: ${theme.font.sizes.small};
+  font-size: ${sizes}rem;
   border-radius: 5px;
   border: none;
   transition: all 500ms ease-in-out;

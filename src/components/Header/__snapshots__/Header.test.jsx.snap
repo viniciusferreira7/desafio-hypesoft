@@ -81,7 +81,7 @@ exports[`<Header/> should render link 1`] = `
 }
 
 .c6 {
-  color: #ffff;
+  color: #FFFF;
   font-weight: 400;
   font-size: 4.8rem;
 }
@@ -197,6 +197,7 @@ exports[`<Header/> should render link 1`] = `
     >
       <h1
         class="c6"
+        color="#FFFF"
       >
         Hello, I’m John, a
         <span>

@@ -31,8 +31,8 @@ const mediaFont = (theme) => css`
 `;
 
 export const Title = styled.h1`
-  ${({ theme, size, bold }) => css`
-    color: ${theme.colors.white};
+  ${({ theme, size, bold, color }) => css`
+    color: ${color};
     font-weight:${bold ? 500 : 400};
     ${titleSize[size](theme)};
 
