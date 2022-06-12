@@ -1,8 +1,9 @@
 import styled, { css } from 'styled-components';
 import { Title as Heading } from '../Heading/styles';
 import { Container as TextComponent } from '../TextComponent/styles';
+import { Container as GridDot } from '../GridDot/styles';
 
-export const Container = styled.div`
+export const Container = styled.header`
 ${({ theme }) => css`
   min-height: 108rem;
 
@@ -26,11 +27,11 @@ ${({ theme }) => css`
 
   > ${Heading} {
     max-width: 75.8rem;
+  }
 
 
   > ${TextComponent}{
     max-width: 67rem;
-    line-height: 1.6rem;
   }
   `}
 `;
@@ -49,6 +50,13 @@ ${({ theme }) => css`
     width: 100%;
     height: 5.5rem;
   }
+
+  > ${GridDot}{
+    position: absolute;
+    top: 41.7rem;
+    right:18%;
+    z-index: 3;
+  }
 `}`;
 
 export const Image = styled.div`
@@ -56,7 +64,7 @@ ${({ theme }) => css`
   background-image:url('assets/images/image.png');
   background-size: 100% 100%;
   width: 87.0rem;
-  height: 97.4rem;
+  height: 92.8rem;
   position: absolute;
   top: 8rem;
   right: 8rem;

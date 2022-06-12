@@ -1,19 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Header/> should render link 1`] = `
-.c10 {
+.c13 {
   color: #FFFF;
   font-weight: 400;
   font-size: 8rem;
 }
 
-.c10 > span {
+.c13 > span {
   color: #7D00FF;
   position: relative;
   z-index: 2;
 }
 
-.c10 > span::before {
+.c13 > span::before {
   content: '';
   opacity: 0.2;
   position: absolute;
@@ -25,35 +25,49 @@ exports[`<Header/> should render link 1`] = `
   background: #35016b;
 }
 
-.c12 {
+.c15 {
   font-size: 2rem;
   color: #A5A5A5;
   padding: 3.2rem 0;
 }
 
-.c17 {
+.c20 {
   font-size: 1.4rem;
   color: #FFFFF;
   padding: 3.2rem 0;
+}
+
+.c3 {
+  width: 15.2rem;
+  height: 6.8rem;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.c4 {
+  background: #242424;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin: 0.8rem;
 }
 
 .c0 {
   min-height: 108rem;
 }
 
-.c8 {
+.c11 {
   max-width: 75.8rem;
   margin-top: 23.8rem;
   position: relative;
 }
 
-.c8 > .c9 {
+.c11 > .c12 {
   max-width: 75.8rem;
 }
 
-.c8 > .c9 > .c11 {
+.c11 > .c14 {
   max-width: 67rem;
-  line-height: 1.6rem;
+  line-height: 3rem;
 }
 
 .c1 {
@@ -66,17 +80,24 @@ exports[`<Header/> should render link 1`] = `
   right: 0;
 }
 
-.c2 {
+.c1 > .c2 {
+  position: absolute;
+  top: 41.7rem;
+  right: 18%;
+  z-index: 3;
+}
+
+.c5 {
   background-image: url('assets/images/image.png');
   background-size: 100% 100%;
   width: 87.0rem;
-  height: 97.4rem;
+  height: 92.8rem;
   position: absolute;
   top: 8rem;
   right: 8rem;
 }
 
-.c13 {
+.c16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -87,7 +108,7 @@ exports[`<Header/> should render link 1`] = `
   gap: 1.6rem;
 }
 
-.c16 {
+.c19 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -99,11 +120,11 @@ exports[`<Header/> should render link 1`] = `
   margin-top: 20.2rem;
 }
 
-.c16 > .c11 {
+.c19 > .c14 {
   padding: 0;
 }
 
-.c16 > div {
+.c19 > div {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -111,7 +132,7 @@ exports[`<Header/> should render link 1`] = `
   gap: 1.2rem;
 }
 
-.c16 > div > a {
+.c19 > div > a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -134,29 +155,29 @@ exports[`<Header/> should render link 1`] = `
   transition: all 600ms ease-in-out;
 }
 
-.c16 > div > a > svg {
+.c19 > div > a > svg {
   width: 2rem;
   height: 2rem;
 }
 
-.c16 > div > a:hover {
+.c19 > div > a:hover {
   background: #7D00FF;
   color: #ffff;
   border: none;
 }
 
-.c16 > div > a:hover > svg {
+.c19 > div > a:hover > svg {
   width: 2.5rem;
   height: 2.5rem;
 }
 
-.c4 {
+.c7 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
 }
 
-.c5 {
+.c8 {
   z-index: 5;
   width: 100%;
   padding: 2.8rem 15rem 3.8rem 0;
@@ -164,7 +185,7 @@ exports[`<Header/> should render link 1`] = `
   transition: all 300ms ease-in-out;
 }
 
-.c3 {
+.c6 {
   z-index: 6;
   position: fixed;
   top: 2rem;
@@ -178,12 +199,12 @@ exports[`<Header/> should render link 1`] = `
   pointer-events: all;
 }
 
-.c3 > svg {
+.c6 > svg {
   width: 2.5rem;
   height: 2.5rem;
 }
 
-.c6 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -197,7 +218,7 @@ exports[`<Header/> should render link 1`] = `
   justify-content: right;
 }
 
-.c7 {
+.c10 {
   display: block;
   font-size: 1.6rem;
   text-transform: uppercase;
@@ -209,7 +230,7 @@ exports[`<Header/> should render link 1`] = `
   cursor: pointer;
 }
 
-.c7::after {
+.c10::after {
   content: '';
   position: absolute;
   bottom: 1.3rem;
@@ -221,12 +242,12 @@ exports[`<Header/> should render link 1`] = `
   transition: all 300ms ease-in-out;
 }
 
-.c7:hover::after {
+.c10:hover::after {
   left: 25%;
   width: 50%;
 }
 
-.c14 {
+.c17 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -258,12 +279,12 @@ exports[`<Header/> should render link 1`] = `
   cursor: pointer;
 }
 
-.c14:hover {
+.c17:hover {
   background: #ffff;
   color: #242424;
 }
 
-.c15 {
+.c18 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -295,13 +316,13 @@ exports[`<Header/> should render link 1`] = `
   cursor: pointer;
 }
 
-.c15:hover {
+.c18:hover {
   background: #7D00FF;
   color: #ffff;
 }
 
 @media (max-width:768px) {
-  .c10 {
+  .c13 {
     font-size: 4.0rem;
   }
 }
@@ -314,7 +335,7 @@ exports[`<Header/> should render link 1`] = `
 }
 
 @media (max-width:768px) {
-  .c8 {
+  .c11 {
     margin-top: 0;
   }
 }
@@ -327,19 +348,19 @@ exports[`<Header/> should render link 1`] = `
 }
 
 @media (max-width:768px) {
-  .c2 {
+  .c5 {
     display: none;
   }
 }
 
 @media (max-width:768px) {
-  .c16 {
+  .c19 {
     margin-top: 10rem;
   }
 }
 
 @media (max-width:768px) {
-  .c5 {
+  .c8 {
     position: absolute;
     top: 0;
     left: 0;
@@ -351,7 +372,7 @@ exports[`<Header/> should render link 1`] = `
 }
 
 @media (max-width:768px) {
-  .c3 {
+  .c6 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -368,7 +389,7 @@ exports[`<Header/> should render link 1`] = `
 }
 
 @media (max-width:768px) {
-  .c6 {
+  .c9 {
     -webkit-flex-flow: column wrap;
     -ms-flex-flow: column wrap;
     flex-flow: column wrap;
@@ -379,7 +400,7 @@ exports[`<Header/> should render link 1`] = `
 }
 
 @media (max-width:768px) {
-  .c7 {
+  .c10 {
     padding: 4.0rem 0;
     font-size: 2.0rem;
     color: #ffff;
@@ -387,23 +408,156 @@ exports[`<Header/> should render link 1`] = `
 }
 
 <div>
-  <div
+  <header
     class="c0"
   >
     <div
       class="c1"
-    />
+    >
+      <div
+        class="c2 c3"
+      >
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+        <div
+          class="c4"
+          color="#242424"
+        />
+      </div>
+    </div>
     <div
-      class="c2"
+      class="c5"
     />
     <button
       aria-label="Open/Close menu"
-      class="c3"
+      class="c6"
     >
       <svg
         aria-hidden="true"
         aria-label="Open menu"
-        class="c4"
+        class="c7"
         fill="currentColor"
         focusable="false"
         viewBox="0 0 24 24"
@@ -419,38 +573,38 @@ exports[`<Header/> should render link 1`] = `
       </svg>
     </button>
     <div
-      class="c5"
+      class="c8"
     >
       <nav
-        class="c6"
+        class="c9"
       >
         <a
-          class="c7"
+          class="c10"
         >
           about
         </a>
         <a
-          class="c7"
+          class="c10"
         >
           services
         </a>
         <a
-          class="c7"
+          class="c10"
         >
           works
         </a>
         <a
-          class="c7"
+          class="c10"
         >
           contact
         </a>
       </nav>
     </div>
     <div
-      class="c8"
+      class="c11"
     >
       <h1
-        class="c9 c10"
+        class="c12 c13"
         color="#FFFF"
       >
         Hello, I’m John, a
@@ -460,23 +614,23 @@ exports[`<Header/> should render link 1`] = `
         </span>
       </h1>
       <p
-        class="c11 c12"
+        class="c14 c15"
         color="#A5A5A5"
         sizes="2"
       >
         Product Designer, UI/UX Designer, and developer based in Brazil. Over the past 17 years, as an art director and designer, I’ve worked with big companies and up-and-coming startups.
       </p>
       <div
-        class="c13"
+        class="c16"
       >
         <button
-          class="c14"
+          class="c17"
           sizes="1.6"
         >
           Hire Me
         </button>
         <button
-          class="c15"
+          class="c18"
           sizes="1.6"
         >
           view work
@@ -484,10 +638,10 @@ exports[`<Header/> should render link 1`] = `
       </div>
     </div>
     <div
-      class="c16"
+      class="c19"
     >
       <p
-        class="c11 c17"
+        class="c14 c20"
         color="#FFFFF"
         sizes="1.4"
       >
@@ -500,7 +654,7 @@ exports[`<Header/> should render link 1`] = `
           <svg
             aria-hidden="true"
             aria-label="github icon"
-            class="c4"
+            class="c7"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 16 16"
@@ -517,7 +671,7 @@ exports[`<Header/> should render link 1`] = `
           <svg
             aria-hidden="true"
             aria-label="instagram icon"
-            class="c4"
+            class="c7"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 16 16"
@@ -534,7 +688,7 @@ exports[`<Header/> should render link 1`] = `
           <svg
             aria-hidden="true"
             aria-label="facebook icon"
-            class="c4"
+            class="c7"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 16 16"
@@ -551,7 +705,7 @@ exports[`<Header/> should render link 1`] = `
           <svg
             aria-hidden="true"
             aria-label="linkedin icon"
-            class="c4"
+            class="c7"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 16 16"
@@ -564,6 +718,6 @@ exports[`<Header/> should render link 1`] = `
         </a>
       </div>
     </div>
-  </div>
+  </header>
 </div>
 `;

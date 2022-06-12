@@ -9,11 +9,14 @@ import { Github as GitHubIcon } from '@styled-icons/bootstrap/Github';
 import { Instagram as InstaIcon } from '@styled-icons/bootstrap/Instagram';
 import { Facebook as FaceIcon } from '@styled-icons/bootstrap/Facebook';
 import { Linkedin as LinkeIcon } from '@styled-icons/bootstrap/Linkedin';
+import { GridDot } from '../GridDot';
 
 export const Header = ({ links, title }) => {
   return (
     <Styled.Container>
-      <Styled.Background />
+      <Styled.Background>
+        <GridDot />
+      </Styled.Background>
       <Styled.Image />
       <Navigation
         links_1={links[0]}
@@ -27,7 +30,7 @@ export const Header = ({ links, title }) => {
           <br />
           <span>{title[1]}</span>
         </Heading>
-        <TextComponent sizes={2}>
+        <TextComponent sizes={2} lineHeight={3}>
           Product Designer, UI/UX Designer, and developer based in Brazil. Over
           the past 17 years, as an art director and designer, I’ve worked with
           big companies and up-and-coming startups.

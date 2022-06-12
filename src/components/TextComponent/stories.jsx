@@ -8,6 +8,7 @@ export default {
     children: 'TextComponent',
     sizes: 2.0,
     color: theme.colors.gray_500,
+    lineHeight: 2.0,
   },
   argsTypes: {
     children: { type: 'string' },
