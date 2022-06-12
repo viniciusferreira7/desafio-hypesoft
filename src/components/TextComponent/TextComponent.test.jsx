@@ -23,6 +23,13 @@ describe('<TextComponent/>', () => {
     });
   });
 
+  it('should render TextComponent width line-height', () => {
+    renderTheme(<TextComponent lineHeight={2}>Texto</TextComponent>);
+    expect(screen.getByText('Texto')).toHaveStyle({
+      'line-height': '2rem',
+    });
+  });
+
   it('should math snapshot', () => {
     const { container } = renderTheme(<TextComponent>Texto</TextComponent>);
     expect(container).toMatchSnapshot();
