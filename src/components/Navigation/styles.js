@@ -76,6 +76,7 @@ ${({ theme, visible }) => css`
   padding: 0 4.0rem 2rem 4.0rem;
   color:${theme.colors.white};
   position:relative;
+  cursor: pointer;
 
   @media ${theme.media.lteMedium}{
     padding: ${theme.spacings.xlarge} 0;

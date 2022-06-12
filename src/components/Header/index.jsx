@@ -5,6 +5,10 @@ import { Navigation } from '../Navigation';
 import { Heading } from '../Heading';
 import { TextComponent } from '../TextComponent';
 import { Button } from '../Button';
+import { Github as GitHubIcon } from '@styled-icons/bootstrap/Github';
+import { Instagram as InstaIcon } from '@styled-icons/bootstrap/Instagram';
+import { Facebook as FaceIcon } from '@styled-icons/bootstrap/Facebook';
+import { Linkedin as LinkeIcon } from '@styled-icons/bootstrap/Linkedin';
 
 export const Header = ({ links = [], title = [] }) => {
   return (
@@ -18,7 +22,8 @@ export const Header = ({ links = [], title = [] }) => {
       <Styled.Info>
         <Heading>
           {title[0]}
-          <span> {title[1]}</span>
+          <br />
+          <span>{title[1]}</span>
         </Heading>
         <TextComponent sizes={2}>
           Product Designer, UI/UX Designer, and developer based in Brazil. Over
@@ -30,6 +35,23 @@ export const Header = ({ links = [], title = [] }) => {
           <Button>view work</Button>
         </Styled.ButtonGroup>
       </Styled.Info>
+      <Styled.Follow>
+        <TextComponent color="#FFFFF">Follow me on</TextComponent>
+        <div>
+          <a href="https://github.com/viniciusferreira7">
+            <GitHubIcon />
+          </a>
+          <a href="https://www.instagram.com/viniciusaf0/">
+            <InstaIcon />
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100006780847667/">
+            <FaceIcon />
+          </a>
+          <a href="https://www.linkedin.com/in/vinicius-ferreira-84b68b162/">
+            <LinkeIcon />
+          </a>
+        </div>
+      </Styled.Follow>
     </Styled.Container>
   );
 };
