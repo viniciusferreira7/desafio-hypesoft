@@ -1,11 +1,15 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
-${() => css`
+${({ theme }) => css`
   width: 15.2rem;
   height: 6.8rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+
+  @media ${theme.media.lteMedium}{
+      display:none;
+    }
 `}
 `;
 

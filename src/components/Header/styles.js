@@ -53,7 +53,7 @@ ${({ theme }) => css`
 
   > ${GridDot}{
     position: absolute;
-    top: 41.7rem;
+    top: 41.7rem !important;
     right:18%;
     z-index: 3;
   }

@@ -3,7 +3,7 @@ import React from 'react';
 import * as Styled from './styles';
 import { Heading } from '../Heading';
 
-export const Services = ({ title }) => {
+export const Stack = ({ title }) => {
   return (
     <Styled.Container>
       <Heading size="large">
@@ -13,6 +13,6 @@ export const Services = ({ title }) => {
   );
 };
 
-Services.propTypes = {
+Stack.propTypes = {
   title: P.string.isRequired,
 };

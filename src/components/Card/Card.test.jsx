@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
-import { Services } from '.';
+import { Card } from '.';
 
-describe('<Services/>', () => {
+describe('<Card/>', () => {
   it('should render with default values', () => {
-    render(<Services>Texto</Services>);
+    render(<Card>Texto</Card>);
     expect(screen.getByRole('heading')).toBeInTheDocument();
   });
 });
