@@ -83,7 +83,7 @@ exports[`<Header/> should render link 1`] = `
 
 .c1 > .c2 {
   position: absolute;
-  top: 41.7rem;
+  top: 41.7rem !important;
   right: 18%;
   z-index: 3;
 }
@@ -329,6 +329,12 @@ exports[`<Header/> should render link 1`] = `
 }
 
 @media (max-width:768px) {
+  .c3 {
+    display: none;
+  }
+}
+
+@media (max-width:768px) {
   .c0 {
     min-height: 0;
     padding-bottom: 5%;
@@ -362,7 +368,7 @@ exports[`<Header/> should render link 1`] = `
 
 @media (max-width:768px) {
   .c8 {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
@@ -587,7 +593,7 @@ exports[`<Header/> should render link 1`] = `
         <a
           class="c10"
         >
-          services
+          stacks
         </a>
         <a
           class="c10"

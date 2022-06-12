@@ -8,7 +8,7 @@ export const Card = ({ icon, stack }) => {
     <Styled.Container>
       {icon}
       <TextComponent color="#242424" sizes={3.2} lineHeight={4}>
-        {stack} <p></p>
+        {stack} <strong></strong>
       </TextComponent>
       <img src="assets/images/GroupBlack.png" alt="Arrow right"></img>
     </Styled.Container>
@@ -16,6 +16,6 @@ export const Card = ({ icon, stack }) => {
 };
 
 Card.propTypes = {
-  icon: P.node.isRequired,
+  icon: P.node,
   stack: P.string.isRequired,
 };

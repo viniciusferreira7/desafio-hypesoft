@@ -176,15 +176,6 @@ exports[`<About/> should march snapshot 1`] = `
 }
 
 @media (max-width:768px) {
-  .c2 {
-    max-width: auto;
-    position: relative;
-    left: 40%;
-    text-align: center;
-  }
-}
-
-@media (max-width:768px) {
   .c6 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
