@@ -28,4 +28,13 @@ describe('<Header/>', () => {
       </Header>,
     );
   });
+
+  it('should render icons', () => {
+    renderTheme(<Header {...data}>Texto</Header>);
+
+    expect(screen.getByLabelText(/github/i).parentElement).toHaveAttribute(
+      'href',
+      'https://github.com/viniciusferreira7',
+    );
+  });
 });

@@ -5,7 +5,6 @@ import { Container as TextComponent } from '../TextComponent/styles';
 export const Container = styled.div`
 ${({ theme }) => css`
   min-height: 108rem;
-  padding:0 2% 0 2%;
 
 
   @media ${theme.media.lteMedium}{

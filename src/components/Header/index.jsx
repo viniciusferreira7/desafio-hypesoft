@@ -41,16 +41,16 @@ export const Header = ({ links, title }) => {
         <TextComponent color="#FFFFF">Follow me on</TextComponent>
         <div>
           <a href="https://github.com/viniciusferreira7">
-            <GitHubIcon />
+            <GitHubIcon aria-label="github icon" />
           </a>
           <a href="https://www.instagram.com/viniciusaf0/">
-            <InstaIcon />
+            <InstaIcon aria-label="instagram icon" />
           </a>
           <a href="https://www.facebook.com/profile.php?id=100006780847667/">
-            <FaceIcon />
+            <FaceIcon aria-label="facebook icon" />
           </a>
           <a href="https://www.linkedin.com/in/vinicius-ferreira-84b68b162/">
-            <LinkeIcon />
+            <LinkeIcon aria-label="linkedin icon" />
           </a>
         </div>
       </Styled.Follow>
