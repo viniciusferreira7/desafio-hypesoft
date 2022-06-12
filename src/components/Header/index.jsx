@@ -3,6 +3,8 @@ import React from 'react';
 import * as Styled from './styles';
 import { Navigation } from '../Navigation';
 import { Heading } from '../Heading';
+import { TextComponent } from '../TextComponent';
+import { Button } from '../Button';
 
 export const Header = ({ links = [], title = [] }) => {
   return (
@@ -18,6 +20,15 @@ export const Header = ({ links = [], title = [] }) => {
           {title[0]}
           <span> {title[1]}</span>
         </Heading>
+        <TextComponent sizes={2}>
+          Product Designer, UI/UX Designer, and developer based in Brazil. Over
+          the past 17 years, as an art director and designer, I’ve worked with
+          big companies and up-and-coming startups.
+        </TextComponent>
+        <Styled.ButtonGroup>
+          <Button background>Hire Me</Button>
+          <Button>view work</Button>
+        </Styled.ButtonGroup>
       </Styled.Info>
     </Styled.Container>
   );
