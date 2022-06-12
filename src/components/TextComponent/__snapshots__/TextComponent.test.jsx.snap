@@ -2,16 +2,16 @@
 
 exports[`<TextComponent/> should math snapshot 1`] = `
 .c0 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: #A5A5A5;
-  padding: 3.2rem;
+  padding: 3.2rem 0;
 }
 
 <div>
   <p
     class="c0"
     color="#A5A5A5"
-    sizes="1.8"
+    sizes="1.4"
   >
     Texto
   </p>

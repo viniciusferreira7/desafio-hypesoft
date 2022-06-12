@@ -10,9 +10,11 @@ import { Instagram as InstaIcon } from '@styled-icons/bootstrap/Instagram';
 import { Facebook as FaceIcon } from '@styled-icons/bootstrap/Facebook';
 import { Linkedin as LinkeIcon } from '@styled-icons/bootstrap/Linkedin';
 
-export const Header = ({ links = [], title = [] }) => {
+export const Header = ({ links, title }) => {
   return (
     <Styled.Container>
+      <Styled.Background />
+      <Styled.Image />
       <Navigation
         links_1={links[0]}
         links_2={links[1]}

@@ -9,9 +9,10 @@ export const Container = styled.div`
 ${({ theme, visible }) => css`
     z-index: 5;
     width:100%;
-    padding:2.8rem 0 3.8rem;
+    padding:2.8rem 15rem 3.8rem 0;
     border-bottom-color: ${theme.colors.mediumGray};
     transition: all 300ms ease-in-out;
+
 
     @media ${theme.media.lteMedium}{
       position: absolute;
@@ -91,7 +92,7 @@ ${({ theme, visible }) => css`
     left:50%;
     width:0;
     height:0.2rem;
-    background:${theme.colors.secondaryColor};
+    background:${theme.colors.white};
     transition: all 300ms ease-in-out;
   }
 

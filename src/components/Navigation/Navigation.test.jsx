@@ -30,6 +30,18 @@ describe('<Navigation/>', () => {
       },
     );
   });
+  it('should render links with color correctly', () => {
+    renderTheme(<Navigation {...mock} />);
+    fireEvent.click(screen.getByLabelText('Open/Close menu'));
+
+    expect(screen.getByText(/link 4/i)).toHaveStyleRule(
+      'color',
+      theme.colors.white,
+      {
+        media: theme.media.lteMedium,
+      },
+    );
+  });
 
   it('should render menu mobile an button for open and close the menu', () => {
     renderTheme(<Navigation {...mock} />);

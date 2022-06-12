@@ -4,11 +4,31 @@ exports[`<Heading/> should match snapshot 1`] = `
 .c0 {
   color: #FFFF;
   font-weight: 400;
-  font-size: 4.8rem;
+  font-size: 8rem;
 }
 
 .c0 > span {
   color: #7D00FF;
+  position: relative;
+  z-index: 2;
+}
+
+.c0 > span::before {
+  content: '';
+  opacity: 0.2;
+  position: absolute;
+  z-index: 1;
+  top: 60%;
+  left: 0;
+  width: 90%;
+  height: 3rem;
+  background: #35016b;
+}
+
+@media (max-width:768px) {
+  .c0 {
+    font-size: 4.0rem;
+  }
 }
 
 <div>

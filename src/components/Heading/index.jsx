@@ -5,7 +5,7 @@ import * as Styled from './styles';
 export const Heading = ({
   children,
   as = 'h1',
-  size = 'big',
+  size = 'huge',
   bold = false,
   color = '#FFFF',
 }) => {

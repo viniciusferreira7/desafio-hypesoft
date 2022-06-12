@@ -10,7 +10,7 @@ exports[`<Navigation/> should match snapshot 1`] = `
 .c2 {
   z-index: 5;
   width: 100%;
-  padding: 2.8rem 0 3.8rem;
+  padding: 2.8rem 15rem 3.8rem 0;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
@@ -57,6 +57,7 @@ exports[`<Navigation/> should match snapshot 1`] = `
   padding: 0 4.0rem 2rem 4.0rem;
   color: #ffff;
   position: relative;
+  cursor: pointer;
 }
 
 .c4::after {
@@ -66,7 +67,7 @@ exports[`<Navigation/> should match snapshot 1`] = `
   left: 50%;
   width: 0;
   height: 0.2rem;
-  background: #7D00FF;
+  background: #ffff;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }

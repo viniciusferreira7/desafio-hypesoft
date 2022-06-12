@@ -38,6 +38,20 @@ export const Title = styled.h1`
 
     > span {
       color: ${theme.colors.secondaryColor};
+      position: relative;
+      z-index: 2;
+    }
+
+    > span::before{
+      content: '';
+      opacity: 0.2;
+      position: absolute;
+      z-index: 1;
+      top: 60%;
+      left: 0;
+      width: 90%;
+      height: 3rem;
+      background: #35016b;
     }
   `}
 `;

@@ -5,7 +5,7 @@ import * as Styled from './styles';
 
 export const TextComponent = ({
   children,
-  sizes = 1.8,
+  sizes = 1.4,
   color = theme.colors.gray_500,
 }) => {
   return (
