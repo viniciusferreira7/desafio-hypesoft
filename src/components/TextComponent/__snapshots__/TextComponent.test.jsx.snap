@@ -5,6 +5,7 @@ exports[`<TextComponent/> should math snapshot 1`] = `
   font-size: 1.4rem;
   color: #A5A5A5;
   padding: 3.2rem 0;
+  line-height: 2rem;
 }
 
 <div>

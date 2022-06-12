@@ -60,8 +60,8 @@ ${({ theme }) => css`
 `}`;
 
 export const Image = styled.div`
-${({ theme }) => css`
-  background-image:url('assets/images/image.png');
+${({ theme, srcImg }) => css`
+  background-image:url(${srcImg});
   background-size: 100% 100%;
   width: 87.0rem;
   height: 92.8rem;

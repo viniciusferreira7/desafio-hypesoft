@@ -1,15 +1,12 @@
-import P from 'prop-types';
 import React from 'react';
+import { About } from '../About';
+import data from '../About/data';
 import * as Styled from './styles';
 
-export const Main = ({ children }) => {
+export const Main = () => {
   return (
     <Styled.Container>
-      <h1>{children}</h1>
+      <About {...data} />
     </Styled.Container>
   );
-};
-
-Main.propTypes = {
-  children: P.node.isRequired,
 };

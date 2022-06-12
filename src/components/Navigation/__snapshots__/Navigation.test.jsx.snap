@@ -148,7 +148,7 @@ exports[`<Navigation/> should match snapshot 1`] = `
       />
     </svg>
   </button>
-  <div
+  <nav
     class="c2"
   >
     <nav
@@ -175,6 +175,6 @@ exports[`<Navigation/> should match snapshot 1`] = `
         link 4
       </a>
     </nav>
-  </div>
+  </nav>
 </div>
 `;

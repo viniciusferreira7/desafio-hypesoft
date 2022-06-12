@@ -11,13 +11,13 @@ import { Facebook as FaceIcon } from '@styled-icons/bootstrap/Facebook';
 import { Linkedin as LinkeIcon } from '@styled-icons/bootstrap/Linkedin';
 import { GridDot } from '../GridDot';
 
-export const Header = ({ links, title }) => {
+export const Header = ({ srcImg, links, title }) => {
   return (
     <Styled.Container>
       <Styled.Background>
         <GridDot />
       </Styled.Background>
-      <Styled.Image />
+      <Styled.Image srcImg={srcImg} />
       <Navigation
         links_1={links[0]}
         links_2={links[1]}
@@ -62,6 +62,7 @@ export const Header = ({ links, title }) => {
 };
 
 Header.propTypes = {
+  srcImg: P.string.isRequired,
   links: P.array.isRequired,
   title: P.array.isRequired,
 };

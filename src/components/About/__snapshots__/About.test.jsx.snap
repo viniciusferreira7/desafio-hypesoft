@@ -1,0 +1,282 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<About/> should march snapshot 1`] = `
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1.2rem 3.2rem;
+  -webkit-letter-spacing: 0.02rem;
+  -moz-letter-spacing: 0.02rem;
+  -ms-letter-spacing: 0.02rem;
+  letter-spacing: 0.02rem;
+  text-transform: uppercase;
+  background: #7D00FF;
+  color: #ffff;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  border: none;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+}
+
+.c13:hover {
+  background: #ffff;
+  color: #242424;
+}
+
+.c5 {
+  font-size: 1.8rem;
+  color: #A5A5A5;
+  padding: 3.2rem 0;
+  line-height: 2.8rem;
+}
+
+.c8 {
+  font-size: 5.6rem;
+  color: #ED1CA6;
+  padding: 3.2rem 0;
+  line-height: 6.4rem;
+}
+
+.c9 {
+  font-size: 1.8rem;
+  color: #FFFF;
+  padding: 3.2rem 0;
+  line-height: 2.8rem;
+}
+
+.c11 {
+  font-size: 5.6rem;
+  color: #ED1CA6;
+  padding: 3.2rem 0;
+  line-height: 0rem;
+}
+
+.c0 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2.8rem;
+  grid-template-areas: 'SrcImg' 'Description';
+  padding-top: 10rem;
+}
+
+.c1 {
+  grid-area: 'SrcImg';
+  max-width: 56rem;
+  width: 100%;
+  height: 54.2rem;
+  background-image: url(assets/images/about-image.png);
+  background-size: cover;
+  border-radius: 1rem;
+  box-shadow: 3.2rem 3.2rem #ffff;
+}
+
+.c2 {
+  grid-area: 'Description';
+  max-width: 67.2rem;
+}
+
+.c2 > .c12 {
+  width: 16.2rem;
+  height: 5.6rem;
+}
+
+.c2 > .c12 > img {
+  margin-left: 1.1rem;
+}
+
+.c6 {
+  max-width: 67.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c7 {
+  max-width: 20.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 5rem;
+}
+
+.c7 > .c4:nth-child(2) {
+  max-width: 9.5rem;
+  margin-left: 1.6rem;
+  padding: 0;
+}
+
+.c10 {
+  width: 25.1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 > .c4:nth-child(2) {
+  max-width: 9.5rem;
+  margin-left: 1.6rem;
+  padding: 0;
+}
+
+.c3 {
+  color: #FFFF;
+  font-weight: 500;
+  font-size: 4.8rem;
+}
+
+.c3 > span {
+  color: #7D00FF;
+  position: relative;
+  z-index: 2;
+}
+
+.c3 > span::before {
+  content: '';
+  opacity: 0.2;
+  position: absolute;
+  z-index: 1;
+  top: 60%;
+  left: 0;
+  width: 90%;
+  height: 3rem;
+  background: #35016b;
+}
+
+@media (max-width:768px) {
+  .c1 {
+    display: none;
+  }
+}
+
+@media (max-width:768px) {
+  .c2 {
+    max-width: auto;
+    position: relative;
+    left: 40%;
+    text-align: center;
+  }
+}
+
+@media (max-width:768px) {
+  .c6 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-bottom: 3.2rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c3 {
+    font-size: 4.0rem;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    />
+    <div
+      class="c2"
+    >
+      <div
+        class=""
+      >
+        <h1
+          class="c3"
+          color="#FFFF"
+        >
+          Software Engineer and Infrastructure specialist based in Brazil.
+        </h1>
+        <p
+          class="c4 c5"
+          color="#A5A5A5"
+          sizes="1.8"
+        >
+          Morbi quam velit, euismod in imperdiet vitae, elementum et elit. Nunc finibus, felis sit amet sollicitudin sollicitudin, nisi magna feugiat enim, in maximus urna enim ac tortor. Nunc in volutpat ipsum, molestie commodo odio. Quisque auctor nisi mi. Aenean venenatis sapien et interdum interdum.
+        </p>
+      </div>
+      <div
+        class="c6"
+      >
+        <div
+          class="c7"
+        >
+          <p
+            class="c4 c8"
+            color="#ED1CA6"
+            sizes="5.6"
+          >
+            17+
+          </p>
+          <p
+            class="c4 c9"
+            color="#FFFF"
+            sizes="1.8"
+          >
+            Years of Experience
+          </p>
+        </div>
+        <div
+          class="c10"
+        >
+          <p
+            class="c4 c11"
+            color="#ED1CA6"
+            sizes="5.6"
+          >
+            325+
+          </p>
+          <p
+            class="c4 c9"
+            color="#FFFF"
+            sizes="1.8"
+          >
+            Completed Projects
+          </p>
+        </div>
+      </div>
+      <button
+        class="c12 c13"
+        sizes="1.6"
+      >
+        Say Hi 
+        <img
+          alt="Arrow right"
+          src="assets/images/Group.png"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;

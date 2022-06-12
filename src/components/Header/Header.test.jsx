@@ -21,9 +21,9 @@ describe('<Header/>', () => {
     });
   });
 
-  it('should render title and links empty', () => {
+  it('should render data empty', () => {
     renderTheme(
-      <Header links={[]} title={[]}>
+      <Header srcImg="" links={[]} title={[]}>
         Texto
       </Header>,
     );

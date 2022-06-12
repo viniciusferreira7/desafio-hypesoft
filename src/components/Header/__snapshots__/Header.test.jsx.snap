@@ -29,12 +29,14 @@ exports[`<Header/> should render link 1`] = `
   font-size: 2rem;
   color: #A5A5A5;
   padding: 3.2rem 0;
+  line-height: 3rem;
 }
 
 .c20 {
   font-size: 1.4rem;
   color: #FFFFF;
   padding: 3.2rem 0;
+  line-height: 2rem;
 }
 
 .c3 {
@@ -67,7 +69,6 @@ exports[`<Header/> should render link 1`] = `
 
 .c11 > .c14 {
   max-width: 67rem;
-  line-height: 3rem;
 }
 
 .c1 {
@@ -88,7 +89,7 @@ exports[`<Header/> should render link 1`] = `
 }
 
 .c5 {
-  background-image: url('assets/images/image.png');
+  background-image: url(assets/images/Image.png);
   background-size: 100% 100%;
   width: 87.0rem;
   height: 92.8rem;
@@ -572,7 +573,7 @@ exports[`<Header/> should render link 1`] = `
         />
       </svg>
     </button>
-    <div
+    <nav
       class="c8"
     >
       <nav
@@ -599,7 +600,7 @@ exports[`<Header/> should render link 1`] = `
           contact
         </a>
       </nav>
-    </div>
+    </nav>
     <div
       class="c11"
     >

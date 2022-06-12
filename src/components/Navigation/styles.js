@@ -5,7 +5,7 @@ const menuVisible = () => css`
   opacity: 1;
   `;
 
-export const Container = styled.div`
+export const Container = styled.nav`
 ${({ theme, visible }) => css`
     z-index: 5;
     width:100%;
@@ -15,7 +15,7 @@ ${({ theme, visible }) => css`
 
 
     @media ${theme.media.lteMedium}{
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       height:100vh;
