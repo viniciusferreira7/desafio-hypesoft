@@ -74,7 +74,36 @@ ${({ theme }) => css`
         color: #ED1CA6;
       }
     }
+;
+`}
+`;
 
+export const ContainerIcon = styled.div`
+${({ theme }) => css`
+  transition: all 400ms ease-in-out;
+  height: 15.2rem;
+
+  @media ${theme.media.lteMedium}{
+
+    > svg {
+      width:3rem !important;
+      height:3rem !important;
+      margin: 0;
+    }
+  }
+
+    > svg{
+      width:4rem;
+      height:4rem;
+      margin: 2.2rem 2.2rem 0 2.2rem;
+      color: #242424;
+    }
+
+    &:hover {
+       > svg {
+        color: #ED1CA6;
+      }
+    }
 ;
 `}
 `;

@@ -4,7 +4,12 @@ import { Stack } from '.';
 
 describe('<Stack/>', () => {
   it('should render with default values', () => {
-    renderTheme(<Stack>Texto</Stack>);
-    expect(screen.getByRole('heading')).toBeInTheDocument();
+    renderTheme(<Stack title="test" />);
+    expect(screen.getByText('test')).toBeInTheDocument();
+  });
+
+  it('should match snapshot', () => {
+    const { container } = renderTheme(<Stack title="test" />);
+    expect(container).toMatchSnapshot();
   });
 });

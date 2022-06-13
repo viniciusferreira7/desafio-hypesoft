@@ -6,7 +6,7 @@ import { TextComponent } from '../TextComponent';
 export const Card = ({ icon, stack }) => {
   return (
     <Styled.Container>
-      {icon}
+      <Styled.ContainerIcon>{icon}</Styled.ContainerIcon>
       <TextComponent color="#242424" sizes={3.2} lineHeight={4}>
         {stack} <strong></strong>
       </TextComponent>

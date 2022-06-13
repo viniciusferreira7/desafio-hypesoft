@@ -4,7 +4,7 @@ import data from './data';
 export default {
   title: 'Stack',
   component: Stack,
-  args: data,
+  args: data.stack[0],
 };
 
 export const Templetes = (args) => {

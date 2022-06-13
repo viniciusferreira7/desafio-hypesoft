@@ -12,9 +12,9 @@ export const Stack = ({ title }) => {
         {title} <div></div>
       </Heading>
       <Styled.StackGroup>
-        <Card stack={data.front.text} icon={data.front.icon} />
-        <Card stack={data.back.text} icon={data.back.icon} />
-        <Card stack={data.soft.text} icon={data.soft.icon} />
+        {data.stack.map((data) => (
+          <Card key={data.text} stack={data.text} icon={data.icon} />
+        ))}
       </Styled.StackGroup>
     </Styled.Container>
   );
