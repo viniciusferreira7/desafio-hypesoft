@@ -7,7 +7,7 @@ export default {
       link: 'https://github.com/viniciusferreira7/Buildbox',
     },
     {
-      srcImg: 'assets/images/work/ecommerceDesktop.gif',
+      srcImg: 'assets/images/works/ecommerceDesktop.gif',
       subTitle: 'ecommerce product page main',
       link: 'https://github.com/viniciusferreira7/ecommerce-product-page-main',
     },
@@ -28,7 +28,7 @@ export default {
     },
     {
       srcImg: 'assets/images/works/vizpertDesktop.gif',
-      subTitle: 'TECH-LIBRARY-Vizpert',
+      subTitle: 'Tech Library Vizpert',
       link: 'https://github.com/viniciusferreira7/TECH-LIBRARY-Vizpert',
     },
   ],

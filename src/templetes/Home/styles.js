@@ -9,8 +9,9 @@ export const Container = styled.div`
   ${({ theme }) =>
     css`
       background: ${theme.colors.primaryColor};
+      color: ${theme.colors.white};
+      padding-bottom: 3%;
     `}
-  color: white;
 `;
 
 export const SectionBackground = styled.section`

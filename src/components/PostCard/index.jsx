@@ -9,7 +9,11 @@ export const PostCard = ({ srcImg, subTitle, link }) => {
     <Styled.Container>
       <Styled.SrcImg srcImg={srcImg}></Styled.SrcImg>
       <Styled.Info>
-        <TextComponent color={theme.colors.primaryColor} sizes={2.4}>
+        <TextComponent
+          color={theme.colors.primaryColor}
+          sizes={2.4}
+          lineHeight={4}
+        >
           {subTitle}
         </TextComponent>
         <a href={link}>
