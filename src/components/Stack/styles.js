@@ -12,6 +12,7 @@ ${({ theme }) => css`
   > ${Heading}{
     position: relative;
     text-align: center;
+    text-transform:capitalize ;
 
     > div {
       width: 8rem;
