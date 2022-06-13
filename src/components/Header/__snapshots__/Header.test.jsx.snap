@@ -2,7 +2,7 @@
 
 exports[`<Header/> should render link 1`] = `
 .c13 {
-  color: #FFFF;
+  color: #ffff;
   font-weight: 400;
   font-size: 8rem;
 }
@@ -612,7 +612,7 @@ exports[`<Header/> should render link 1`] = `
     >
       <h1
         class="c12 c13"
-        color="#FFFF"
+        color="#ffff"
       >
         Hello, I’m John, a
         <br />

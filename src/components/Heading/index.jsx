@@ -1,13 +1,14 @@
 import P from 'prop-types';
 import React from 'react';
 import * as Styled from './styles';
+import { theme } from '../../styles/theme';
 
 export const Heading = ({
   children,
   as = 'h1',
   size = 'huge',
   bold = false,
-  color = '#FFFF',
+  color = theme.colors.white,
 }) => {
   return (
     <Styled.Title as={as} size={size} bold={bold} color={color}>

@@ -2,7 +2,7 @@
 
 exports[`<Stack/> should match snapshot 1`] = `
 .c2 {
-  color: #FFFF;
+  color: #ffff;
   font-weight: 400;
   font-size: 4.0rem;
 }
@@ -184,7 +184,7 @@ exports[`<Stack/> should match snapshot 1`] = `
   >
     <h1
       class="c1 c2"
-      color="#FFFF"
+      color="#ffff"
     >
       test
        

@@ -2,7 +2,7 @@
 
 exports[`<Heading/> should match snapshot 1`] = `
 .c0 {
-  color: #FFFF;
+  color: #ffff;
   font-weight: 400;
   font-size: 8rem;
 }
@@ -34,7 +34,7 @@ exports[`<Heading/> should match snapshot 1`] = `
 <div>
   <h6
     class="c0"
-    color="#FFFF"
+    color="#ffff"
   >
     Texto
   </h6>
