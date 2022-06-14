@@ -10,9 +10,11 @@ ${({ theme }) => css`
   overflow: hidden;
   padding: 6.4rem 2%;
   position: relative;
+  margin-top: 16.4rem;
 
-  @media ${theme.media.ltMedium}{
-      max-height:90rem;
+  @media ${theme.media.lteMedium}{
+      max-height:auto;
+      padding-top: 3rem
     }
 
  >  ${GridDot}{
@@ -23,19 +25,25 @@ ${({ theme }) => css`
   }
 
 
-${Heading}{
-    width:50rem;
-    height: 9.6rem;
-    margin: 0 auto;
+  ${Heading}{
+      width:50rem;
+      height: 9.6rem;
+      margin: 0 auto;
 
-    > span{
-      color:#bc199c;
-    }
+      @media ${theme.media.lteMedium}{
+        width: 100%;
+        text-align: center;
+        height: 15rem;
+      }
 
-    > span::before{
-      display: none;
+      > span{
+        color:#bc199c;
+      }
+
+      > span::before{
+        display: none;
+      }
     }
-  }
 
   > ${Button} {
       width: 17.7rem;
@@ -62,13 +70,11 @@ export const SmallEllipse = styled.div`
     top: 2.6rem;
     right: 11.6rem;
 
-    @media ${theme.media.ltMedium}{
+    @media ${theme.media.lteMedium}{
       top: 8rem;
       right: 0;
     }
   `}
-
-
 `;
 
 export const HugeEllipse = styled.div`
@@ -82,7 +88,7 @@ export const HugeEllipse = styled.div`
     top: 13.9rem;
     right: 90.7rem;
 
-    @media ${theme.media.ltMedium}{
+    @media ${theme.media.lteMedium}{
       width:30rem;
       height:30rem;
       top: 0;
