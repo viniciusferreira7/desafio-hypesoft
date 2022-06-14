@@ -13,8 +13,6 @@ export const Testimonial = ({ title }) => {
     setComments(index);
   };
 
-  console.log(comments);
-
   return (
     <Styled.Container>
       <Heading size="large">
