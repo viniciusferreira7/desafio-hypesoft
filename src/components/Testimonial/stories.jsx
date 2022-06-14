@@ -4,10 +4,7 @@ export default {
   title: 'Testimonial',
   component: Testimonial,
   args: {
-    children: 'Testimonial',
-  },
-  argsTypes: {
-    children: { type: 'string' },
+    title: 'Testimonial',
   },
 };
 

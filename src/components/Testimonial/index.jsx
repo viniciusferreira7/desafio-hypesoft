@@ -1,15 +1,35 @@
 import P from 'prop-types';
 import React from 'react';
 import * as Styled from './styles';
+import { Heading } from '../Heading';
+import { Qoute } from '../Qoute';
+import { Client } from '../Client';
+import data from './data';
 
-export const Testimonial = ({ children }) => {
+export const Testimonial = ({ title }) => {
   return (
     <Styled.Container>
-      <h1>{children}</h1>
+      <Heading size="large">
+        {title} <div></div>
+      </Heading>
+      <Styled.ClientContainer>
+        <Styled.Group>
+          {data.map((client) => (
+            <Client
+              key={client.id}
+              srcImg={client.srcImg}
+              name={client.name}
+              profession={client.profession}
+              company={client.company}
+            />
+          ))}
+        </Styled.Group>
+        <Qoute comments={data[0].comments} />
+      </Styled.ClientContainer>
     </Styled.Container>
   );
 };
 
 Testimonial.propTypes = {
-  children: P.node.isRequired,
+  title: P.string.isRequired,
 };

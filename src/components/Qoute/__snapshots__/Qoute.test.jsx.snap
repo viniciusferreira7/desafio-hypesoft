@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Qoute/> should match snapshot 1`] = `
+.c4 {
+  font-size: 1.4rem;
+  color: #A5A5A5;
+  padding: 3.2rem 0;
+  line-height: 2rem;
+}
+
+.c6 {
+  font-size: 3.2rem;
+  color: #242424;
+  padding: 3.2rem 0;
+  line-height: 5.12rem;
+}
+
+.c0 {
+  background: linear-gradient(0deg,rgba(223,227,235,0.3),rgba(223,227,235,0.3)),#FFFFFF;
+  max-width: 96.4rem;
+  width: 100%: min-height:42.1rem;
+}
+
+.c0 > .c3 {
+  max-width: 86.4rem;
+  padding: 2.6rem 5rem 5rem 5rem;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2.4rem 2.42rem 0 5.27rem;
+  position: relative;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 > img {
+  width: 2.667rem;
+  height: 2.536rem;
+  margin-right: 1.067rem;
+}
+
+.c5 {
+  position: absolute;
+  right: 2.42rem;
+}
+
+@media (max-width:768px) {
+  .c0 {
+    width: 100%;
+    height: auto;
+    padding: 2rem 2%;
+  }
+}
+
+@media (max-width:768px) {
+  .c0 > .c3 {
+    width: 100%;
+    font-size: 2rem;
+    line-height: 3rem;
+    height: auto;
+  }
+}
+
+@media (max-width:768px) {
+  .c5 {
+    right: 0.8rem;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        <img
+          alt="start"
+          src="assets/images/start.png"
+        />
+        <p
+          class="c3 c4"
+          color="#A5A5A5"
+          sizes="1.4"
+        >
+          5
+           Star Rating
+        </p>
+      </div>
+      <div
+        class="c5"
+      >
+        <img
+          alt="qoute 1"
+          src="assets/images/qoute.png"
+        />
+        <img
+          alt="qoute"
+          src="assets/images/qoute.png"
+        />
+      </div>
+    </div>
+    <p
+      class="c3 c6"
+      color="#242424"
+      sizes="3.2"
+    >
+      “If you're looking for someone who will challenge your UX/UI thinking and really cut to the core of what's important for users, then Jesse is your man. On top of that, he brings a level of enthusiasm to the craft that's energizing for everyone who works with him.”
+    </p>
+  </div>
+</div>
+`;
