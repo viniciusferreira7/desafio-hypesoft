@@ -4,9 +4,16 @@ import * as Styled from './styles';
 import { TextComponent } from '../TextComponent';
 import { theme } from '../../styles/theme';
 
-export const Client = ({ srcImg, name, profession, company }) => {
+export const Client = ({
+  id,
+  handleCLick,
+  srcImg,
+  name,
+  profession,
+  company,
+}) => {
   return (
-    <Styled.Container>
+    <Styled.Container id={id} onClick={handleCLick}>
       <Styled.Photo srcImg={srcImg} />
       <Styled.Info>
         <TextComponent
@@ -25,6 +32,8 @@ export const Client = ({ srcImg, name, profession, company }) => {
 };
 
 Client.propTypes = {
+  id: P.number.isRequired,
+  handleCLick: P.func,
   srcImg: P.string.isRequired,
   name: P.string.isRequired,
   profession: P.string.isRequired,

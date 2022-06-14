@@ -1,12 +1,20 @@
 import P from 'prop-types';
-import React from 'react';
 import * as Styled from './styles';
 import { Heading } from '../Heading';
 import { Qoute } from '../Qoute';
 import { Client } from '../Client';
 import data from './data';
+import { useState } from 'react';
 
 export const Testimonial = ({ title }) => {
+  const [comments, setComments] = useState(0);
+
+  const handleClick = (index) => {
+    setComments(index);
+  };
+
+  console.log(comments);
+
   return (
     <Styled.Container>
       <Heading size="large">
@@ -14,9 +22,11 @@ export const Testimonial = ({ title }) => {
       </Heading>
       <Styled.ClientContainer>
         <Styled.Group>
-          {data.map((client) => (
+          {data.map((client, index) => (
             <Client
               key={client.id}
+              id={client.id}
+              handleCLick={() => handleClick(index)}
               srcImg={client.srcImg}
               name={client.name}
               profession={client.profession}
@@ -24,7 +34,10 @@ export const Testimonial = ({ title }) => {
             />
           ))}
         </Styled.Group>
-        <Qoute comments={data[0].comments} />
+        <Qoute
+          comments={data[comments].comments}
+          rating={data[comments].rating}
+        />
       </Styled.ClientContainer>
     </Styled.Container>
   );
