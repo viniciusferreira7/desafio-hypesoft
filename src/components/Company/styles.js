@@ -16,7 +16,7 @@ ${({ theme }) => css`
   ${Heading}{
     width: 312px;
 
-    > strong{
+    > span{
       color:#bc199c;
       font-weight: 400;
     }

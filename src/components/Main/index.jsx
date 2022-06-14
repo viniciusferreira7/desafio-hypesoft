@@ -5,6 +5,7 @@ import dataAbout from '../About/data';
 import dataStack from '../Stack/data';
 import * as Styled from './styles';
 import { Work } from '../Work';
+import { Company } from '../Company';
 
 export const Main = () => {
   return (
@@ -12,6 +13,7 @@ export const Main = () => {
       <About {...dataAbout} />
       <Stack title={dataStack.title} />
       <Work title="My Selected Work" />
+      <Company />
     </Styled.Container>
   );
 };

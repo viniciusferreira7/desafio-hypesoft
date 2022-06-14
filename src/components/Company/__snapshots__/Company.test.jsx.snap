@@ -42,7 +42,7 @@ exports[`<Company/> should match snapshot 1`] = `
   width: 312px;
 }
 
-.c0 .c1 > strong {
+.c0 .c1 > span {
   color: #bc199c;
   font-weight: 400;
 }
