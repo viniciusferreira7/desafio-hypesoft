@@ -17,7 +17,7 @@ import data from './data';
 export const ContactInfo = ({ email, phone }) => {
   return (
     <Styled.Container>
-      <Heading color={theme.colors.primaryColor} size="medium">
+      <Heading bold color={theme.colors.primaryColor} size="medium">
         Get In Touch
       </Heading>
       <Styled.Group>

@@ -16,6 +16,8 @@ ${({ theme, background, sizes }) => css`
   border: none;
   transition: all 500ms ease-in-out;
   cursor: pointer;
+  font-weight: 600;
+
 
 &:hover {
   background:${!background ? theme.colors.secondaryColor : theme.colors.white};
