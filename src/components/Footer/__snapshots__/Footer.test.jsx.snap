@@ -12,6 +12,7 @@ exports[`<Footer/> should match snapshot 1`] = `
   width: 26.3rem;
   margin: 0 auto;
   margin-top: 23.8rem;
+  margin-bottom: 17.8rem;
   text-align: center;
 }
 
@@ -35,6 +36,7 @@ exports[`<Footer/> should match snapshot 1`] = `
 @media (max-width:768px) {
   .c0 {
     margin-top: 3rem;
+    margin-bottom: 2.4rem;
   }
 }
 

@@ -14,7 +14,7 @@ export const Testimonial = ({ title }) => {
   };
 
   return (
-    <Styled.Container>
+    <Styled.Container id="Testimonial">
       <Heading size="large">
         {title} <div></div>
       </Heading>

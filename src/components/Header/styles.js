@@ -6,6 +6,7 @@ import { Container as GridDot } from '../GridDot/styles';
 export const Container = styled.header`
 ${({ theme }) => css`
   min-height: 108rem;
+  top: 0;
 
 
   @media ${theme.media.lteMedium}{

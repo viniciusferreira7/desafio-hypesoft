@@ -7,7 +7,7 @@ import data from './data';
 
 export const Stack = ({ title }) => {
   return (
-    <Styled.Container>
+    <Styled.Container id="Stack">
       <Heading size="large">
         {title} <div></div>
       </Heading>

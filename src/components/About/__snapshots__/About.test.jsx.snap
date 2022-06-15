@@ -31,6 +31,7 @@ exports[`<About/> should march snapshot 1`] = `
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .c13:hover {
@@ -191,7 +192,7 @@ exports[`<About/> should march snapshot 1`] = `
 }
 
 <div>
-  <div
+  <section
     class="c0"
   >
     <div
@@ -268,6 +269,6 @@ exports[`<About/> should march snapshot 1`] = `
         />
       </button>
     </div>
-  </div>
+  </section>
 </div>
 `;

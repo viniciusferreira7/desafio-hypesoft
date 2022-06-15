@@ -8,7 +8,7 @@ import data from '../ContactInfo/data';
 
 export const Contact = () => {
   return (
-    <Styled.Container>
+    <Styled.Container id="Contact">
       <GridDot color="#ED1CA6" />
       <ContactForm />
       <ContactInfo email={data.email} phone={data.phone} />

@@ -7,7 +7,7 @@ import { TextComponent } from '../TextComponent';
 
 export const About = ({ srcImg, title, text, years, projects }) => {
   return (
-    <Styled.Container>
+    <Styled.Container id="About">
       <Styled.SrcImg srcImg={srcImg}></Styled.SrcImg>
       <Styled.Description>
         <Styled.InfoHeading>

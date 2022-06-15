@@ -7,7 +7,7 @@ import { PostCard } from '../PostCard';
 
 export const Work = ({ title }) => {
   return (
-    <Styled.Container>
+    <Styled.Container id="Works">
       <Heading size="large">
         {title} <div></div>
       </Heading>

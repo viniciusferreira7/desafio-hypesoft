@@ -278,6 +278,7 @@ exports[`<Header/> should render link 1`] = `
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .c17:hover {
@@ -315,6 +316,7 @@ exports[`<Header/> should render link 1`] = `
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .c18:hover {

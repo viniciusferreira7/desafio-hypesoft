@@ -20,12 +20,12 @@ export const Header = ({ srcImg, links, title }) => {
         links_2={links[1]}
         links_3={links[2]}
         links_4={links[3]}
+        links_5={links[4]}
       />
       <Styled.Info>
         <Heading>
           {title[0]}
-          <br />
-          <span>{title[1]}</span>
+          <span> {title[1]}</span>
         </Heading>
         <TextComponent sizes={2} lineHeight={3}>
           Product Designer, UI/UX Designer, and developer based in Brazil. Over

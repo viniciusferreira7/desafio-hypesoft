@@ -8,6 +8,7 @@ const containerBackgroundActive = (theme) => css`
 export const Container = styled.div`
   ${({ theme }) =>
     css`
+      width: 100%;
       background: ${theme.colors.primaryColor};
       color: ${theme.colors.white};
       padding-bottom: 3%;

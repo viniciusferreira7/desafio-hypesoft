@@ -17,8 +17,8 @@ exports[`<Qoute/> should match snapshot 1`] = `
 
 .c0 {
   background: linear-gradient(0deg,rgba(223,227,235,0.3),rgba(223,227,235,0.3)),#FFFFFF;
-  max-width: 96.4rem;
-  width: 100%: min-height:42.1rem;
+  width: 96.4rem;
+  min-height: 42.1rem;
 }
 
 .c0 > .c3 {
@@ -65,22 +65,34 @@ exports[`<Qoute/> should match snapshot 1`] = `
   .c0 {
     width: 100%;
     height: auto;
-    padding: 2rem 2%;
+    padding: 0.5rem 1%;
   }
 }
 
 @media (max-width:768px) {
   .c0 > .c3 {
     width: 100%;
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-top: 1rem;
     height: auto;
   }
 }
 
 @media (max-width:768px) {
+  .c1 {
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width:768px) {
   .c5 {
-    right: 0.8rem;
+    right: 5rem;
+  }
+
+  .c5 >img {
+    width: 2.0rem;
+    height: 4.0rem;
   }
 }
 

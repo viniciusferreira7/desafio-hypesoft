@@ -9,7 +9,7 @@ export const Container = styled.nav`
 ${({ theme, visible }) => css`
     z-index: 5;
     width:100%;
-    padding:2.8rem 15rem 3.8rem 0;
+    padding:2.8rem 2rem 3.8rem 0;
     border-bottom-color: ${theme.colors.mediumGray};
     transition: all 300ms ease-in-out;
 
@@ -68,12 +68,11 @@ justify-content: right;
 
 `}`;
 
-export const Links = styled.a`
+export const Links = styled.div`
 ${({ theme, visible }) => css`
   display: block;
   font-size: ${theme.font.sizes.small};
   text-transform: uppercase;
-  text-decoration: none;
   padding: 0 4.0rem 2rem 4.0rem;
   color:${theme.colors.white};
   position:relative;
@@ -83,6 +82,7 @@ ${({ theme, visible }) => css`
     padding: ${theme.spacings.xlarge} 0;
     font-size: ${theme.font.sizes.medium};
     color:${visible ? theme.colors.primaryColor : theme.colors.white}
+
   }
 
   &::after{
@@ -94,6 +94,10 @@ ${({ theme, visible }) => css`
     height:0.2rem;
     background:${theme.colors.white};
     transition: all 300ms ease-in-out;
+
+    @media ${theme.media.lteMedium}{
+      display: none;
+    }
   }
 
   &:hover::after{

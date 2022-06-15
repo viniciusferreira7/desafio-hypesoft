@@ -1,5 +1,5 @@
 export default {
-  links: ['about', 'stacks', 'works', 'contact'],
-  title: ['Hello, I’m John, a', 'Software Engineer.'],
+  links: ['about', 'stacks', 'works', 'Testimonial', 'contact'],
+  title: ['Welcome, I’m Vinicius a', 'Front End Developer'],
   srcImg: 'assets/images/Image.png',
 };

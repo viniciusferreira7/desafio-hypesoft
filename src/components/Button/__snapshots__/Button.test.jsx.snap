@@ -31,6 +31,7 @@ exports[`<Button/> should render with default values 1`] = `
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .c0:hover {
