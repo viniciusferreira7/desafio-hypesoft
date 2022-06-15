@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer/> should match snapshot 1`] = `
+.c2 {
+  font-size: 1.4rem;
+  color: #A5A5A5;
+  padding: 3.2rem 0;
+  line-height: 0rem;
+}
+
+.c0 {
+  width: 26.3rem;
+  margin: 0 auto;
+  margin-top: 23.8rem;
+  text-align: center;
+}
+
+.c0 > img {
+  width: 26.3rem;
+  height: 5.9rem;
+}
+
+.c0 .c1 {
+  padding: 1.6rem 0 0 0;
+}
+
+.c0 .c1 > span {
+  color: #ED1CA6;
+}
+
+.c0 .c1 > strong {
+  color: #7D00FF;
+}
+
+@media (max-width:768px) {
+  .c0 {
+    margin-top: 3rem;
+  }
+}
+
+<div>
+  <footer
+    class="c0"
+  >
+    <img
+      alt="hypesoft logo"
+      src="assets/images/logo/hypesoft-logo.png"
+    />
+    <p
+      class="c1 c2"
+      color="#A5A5A5"
+      sizes="1.4"
+    >
+      Made with 
+      <span>
+        ♥
+      </span>
+       by John and 
+      <strong>
+        Hypesoft
+      </strong>
+    </p>
+  </footer>
+</div>
+`;

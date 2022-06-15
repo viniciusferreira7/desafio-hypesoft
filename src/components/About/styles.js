@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { Container as Button } from '../Button/styles';
 import { Container as TextContainer } from '../TextComponent/styles';
 
-export const Container = styled.div`
+export const Container = styled.section`
 ${() => css`
   width: 100%;
   display: grid;

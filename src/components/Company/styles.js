@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { Title as Heading } from '../Heading/styles';
 
-export const Container = styled.div`
+export const Container = styled.section`
 ${({ theme }) => css`
   width: 100%;
   display: flex;

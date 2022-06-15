@@ -8,6 +8,8 @@ import { Work } from '../Work';
 import { Company } from '../Company';
 import { Banner } from '../Banner';
 import { Testimonial } from '../Testimonial';
+import { Contact } from '../Contact';
+import { Footer } from '../Footer';
 
 export const Main = () => {
   return (
@@ -18,6 +20,8 @@ export const Main = () => {
       <Company />
       <Banner />
       <Testimonial title="Testimonial" />
+      <Contact />
+      <Footer />
     </Styled.Container>
   );
 };

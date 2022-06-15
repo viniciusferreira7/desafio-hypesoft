@@ -1,0 +1,235 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContactForm/> should match snapshot 1`] = `
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1.2rem 3.2rem;
+  -webkit-letter-spacing: 0.02rem;
+  -moz-letter-spacing: 0.02rem;
+  -ms-letter-spacing: 0.02rem;
+  letter-spacing: 0.02rem;
+  text-transform: uppercase;
+  background: #7D00FF;
+  color: #ffff;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  border: none;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.c5:hover {
+  background: #ffff;
+  color: #242424;
+}
+
+.c1 {
+  color: #242424;
+  font-weight: 500;
+  font-size: 3.2rem;
+}
+
+.c1 > span {
+  color: #7D00FF;
+  position: relative;
+  z-index: 2;
+}
+
+.c1 > span::before {
+  content: '';
+  opacity: 0.2;
+  position: absolute;
+  z-index: 1;
+  top: 60%;
+  left: 0;
+  width: 90%;
+  height: 3rem;
+  background: #35016b;
+}
+
+.c0 {
+  width: 100%;
+  max-width: 76rem;
+  padding: 4.8rem;
+  background: #ffff;
+  box-shadow: 0rem 1.2rem 2.4rem rgba(10,25,49,0.02);
+  border-radius: 0.8rem;
+}
+
+.c2 {
+  width: 100%;
+  max-width: 66.4rem;
+  min-height: 28.8rem;
+  margin: 2.4rem 0 3.2rem 0;
+}
+
+.c2 input {
+  width: 100%;
+  padding: 1.4rem 2rem;
+  background: #ffff;
+  border: 0.1rem solid #DFE3EB;
+  color: #A5A5A5;
+  border-radius: 0.4rem;
+  outline: none;
+  margin-bottom: 1.6rem;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.c2 input:focus {
+  border: 0.2rem solid #7D00FF;
+}
+
+.c2 input:first-of-type {
+  margin-right: 1.6rem;
+}
+
+.c2 textarea {
+  padding: 1.4rem 2.4rem;
+  max-width: 66.4rem;
+  width: 100%;
+  height: 15.2rem;
+  resize: none;
+  outline: none;
+  border: 0.1rem solid #DFE3EB;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.c2 textarea:focus {
+  border: 0.2rem solid #7D00FF;
+}
+
+.c2 .c4 {
+  margin-top: 3.2rem;
+  max-width: 24rem;
+  width: 100%;
+}
+
+.c2 .c4:hover {
+  border: 0.2rem solid #7D00FF;
+}
+
+.c2 .c4:active {
+  background: #242424;
+  color: #ffff;
+  border-color: #ffff;
+}
+
+.c2 .c4 >img {
+  margin-left: 1.4rem;
+}
+
+.c3 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify !important;
+  -webkit-justify-content: space-between !important;
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
+}
+
+@media (max-width:768px) {
+  .c0 {
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c2 input:first-of-type {
+    margin-right: 0;
+  }
+}
+
+@media (max-width:768px) {
+
+}
+
+@media (max-width:768px) {
+  .c3 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+<div>
+  <form
+    class="c0"
+  >
+    <h1
+      class="c1"
+      color="#242424"
+    >
+      Let me know here.
+    </h1>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+      >
+        <input
+          id="name"
+          name="name"
+          placeholder="Full name"
+          required=""
+          type="text"
+        />
+        <input
+          id="email"
+          name="email"
+          placeholder="Email address"
+          required=""
+          type="email"
+        />
+      </div>
+      <input
+        id="subject"
+        name="subject"
+        placeholder="Subjects"
+        required=""
+        type="subject"
+      />
+      <textarea
+        cols="33"
+        id="message"
+        name="message"
+        placeholder="Message"
+        required=""
+        rows="5"
+      />
+      <button
+        class="c4 c5"
+        sizes="1.6"
+      >
+        Send message 
+        <img
+          alt="send"
+          src="assets/images/GroupPaper.png"
+        />
+      </button>
+    </div>
+  </form>
+</div>
+`;

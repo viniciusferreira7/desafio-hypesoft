@@ -1,13 +1,47 @@
-import P from 'prop-types';
-import React from 'react';
+import emailjs from '@emailjs/browser';
+import React, { useRef, useState } from 'react';
 import { theme } from '../../styles/theme';
 import { Button } from '../Button';
 import { Heading } from '../Heading';
+import { TextComponent } from '../TextComponent';
 import * as Styled from './styles';
 
 export const ContactForm = () => {
+  const [status, setStatus] = useState({
+    message: '',
+    send: null,
+  });
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'gmailMessaage52',
+        'template_4ok6tzu',
+        form.current,
+        'o0ssgS75lRfshhxGO',
+      )
+      .then(
+        (result) => {
+          setStatus({ message: result, send: true });
+        },
+        (error) => {
+          setStatus({ message: error, send: true });
+        },
+      );
+    e.target.reset();
+  };
+
   return (
-    <Styled.Container>
+    <Styled.Container ref={form} onSubmit={sendEmail}>
+      {status.send && (
+        <TextComponent lineHeight={0} color="#018f1e">
+          The email has been sent
+        </TextComponent>
+      )}
       <Heading bold color={theme.colors.primaryColor} size="medium">
         Let me know here.
       </Heading>
@@ -29,9 +63,9 @@ export const ContactForm = () => {
           />
         </Styled.TwoInputs>
         <input
-          type="subjects"
-          name="subjects"
-          id="subjects"
+          type="subject"
+          name="subject"
+          id="subject"
           required
           placeholder="Subjects"
         />
@@ -49,8 +83,4 @@ export const ContactForm = () => {
       </Styled.GroupInput>
     </Styled.Container>
   );
-};
-
-ContactForm.propTypes = {
-  children: P.node.isRequired,
 };

@@ -8,9 +8,11 @@ ${({ theme }) => css`
   background: ${theme.colors.white};
   box-shadow: 0rem 1.2rem 2.4rem rgba(10, 25, 49, 0.02);
   border-radius: 0.8rem;
+  margin-left: 2.4rem;
 
   @media ${theme.media.lteMedium}{
     margin-top: 3rem;
+    margin-left: 0;
   }
   `}
 `;

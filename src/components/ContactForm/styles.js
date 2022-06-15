@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { Container as Button } from '../Button/styles';
+import { Container as TextComponent } from '../TextComponent/styles';
 
 export const Container = styled.form`
 ${({ theme }) => css`
@@ -12,10 +13,21 @@ ${({ theme }) => css`
 
   @media ${theme.media.lteMedium}{
     padding: 2rem;
+    margin-top: 3rem;
+  }
+
+  ${TextComponent}{
+    width: 100%;
+    background:#b1f0b8 ;
+    border:0.1rem solid #018f1e ;
+    border-radius: 2rem;
+    margin-bottom: 2em;
+    text-align: center;
+    opacity: 0.5;
   }
   `}
 `;
-export const GroupInput = styled.form`
+export const GroupInput = styled.div`
 ${({ theme }) => css`
   width: 100%;
   max-width: 66.4rem;
@@ -85,7 +97,7 @@ ${({ theme }) => css`
   }
   `}
 `;
-export const TwoInputs = styled.form`
+export const TwoInputs = styled.div`
 ${({ theme }) => css`
   width: 100%;
   display: flex;

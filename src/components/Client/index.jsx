@@ -32,7 +32,7 @@ export const Client = ({
 };
 
 Client.propTypes = {
-  id: P.number.isRequired,
+  id: P.number,
   handleCLick: P.func,
   srcImg: P.string.isRequired,
   name: P.string.isRequired,

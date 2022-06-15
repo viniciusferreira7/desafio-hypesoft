@@ -3,7 +3,7 @@ import { Title as Heading } from '../Heading/styles';
 import { Container as Button } from '../Button/styles';
 import { Container as GridDot } from '../GridDot/styles';
 
-export const Container = styled.div`
+export const Container = styled.section`
 ${({ theme }) => css`
   width: 100%;
   max-height:31.2rem;

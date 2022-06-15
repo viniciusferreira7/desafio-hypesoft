@@ -1,15 +1,17 @@
-import P from 'prop-types';
 import React from 'react';
 import * as Styled from './styles';
+import { ContactForm } from '../ContactForm';
+import { ContactInfo } from '../ContactInfo';
+import { GridDot } from '../GridDot';
 
-export const Contact = ({ children }) => {
+import data from '../ContactInfo/data';
+
+export const Contact = () => {
   return (
     <Styled.Container>
-      <h1>{children}</h1>
+      <GridDot color="#ED1CA6" />
+      <ContactForm />
+      <ContactInfo email={data.email} phone={data.phone} />
     </Styled.Container>
   );
-};
-
-Contact.propTypes = {
-  children: P.node.isRequired,
 };
