@@ -39,6 +39,16 @@ exports[`<ContactForm/> should match snapshot 1`] = `
   color: #242424;
 }
 
+.c6:hover > a {
+  color: #242424;
+}
+
+.c6 > a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #ffff;
+}
+
 .c2 {
   color: #ffff;
   font-weight: 500;

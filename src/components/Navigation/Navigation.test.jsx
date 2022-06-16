@@ -20,29 +20,6 @@ describe('<Navigation/>', () => {
     expect(screen.getByText(/link 4/i)).toBeInTheDocument();
   });
 
-  it('should render links', () => {
-    renderTheme(<Navigation {...mock} />);
-    expect(screen.getByText(/link 4/i).parentElement).toHaveStyleRule(
-      'flex-flow',
-      'column wrap',
-      {
-        media: theme.media.lteMedium,
-      },
-    );
-  });
-  it('should render links with color correctly', () => {
-    renderTheme(<Navigation {...mock} />);
-    fireEvent.click(screen.getByLabelText('Open/Close menu'));
-
-    expect(screen.getByText(/link 4/i)).toHaveStyleRule(
-      'color',
-      theme.colors.white,
-      {
-        media: theme.media.lteMedium,
-      },
-    );
-  });
-
   it('should render menu mobile an button for open and close the menu', () => {
     renderTheme(<Navigation {...mock} />);
 

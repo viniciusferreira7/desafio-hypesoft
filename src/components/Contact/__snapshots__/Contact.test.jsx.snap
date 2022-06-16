@@ -32,15 +32,15 @@ exports[`<Contact/> should match snapshot 1`] = `
 
 .c0 .c1 {
   position: absolute;
-  top: 16%;
-  right: 12%;
+  top: 9%;
+  right: 9%;
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   opacity: 0.3;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -73,38 +73,52 @@ exports[`<Contact/> should match snapshot 1`] = `
   font-weight: 600;
 }
 
-.c9:hover {
+.c10:hover {
   background: #ffff;
   color: #242424;
 }
 
-.c5 {
+.c10:hover > a {
   color: #242424;
+}
+
+.c10 > a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #ffff;
+}
+
+.c6 {
+  color: #ffff;
   font-weight: 500;
   font-size: 3.2rem;
 }
 
-.c5 > span {
+.c6 > strong {
+  color: #ED1CA6;
+}
+
+.c6 > span {
   color: #7D00FF;
   position: relative;
   z-index: 2;
 }
 
-.c5 > span::before {
+.c6 > span::before {
   content: '';
   opacity: 0.2;
   position: absolute;
   z-index: 1;
-  top: 60%;
+  top: 80%;
   left: 0;
   width: 90%;
   height: 3rem;
   background: #35016b;
 }
 
-.c16 {
+.c17 {
   font-size: 1.8rem;
-  color: #A5A5A5;
+  color: #a3a0a0;
   padding: 3.2rem 0;
   line-height: 2.8rem;
 }
@@ -118,7 +132,11 @@ exports[`<Contact/> should match snapshot 1`] = `
   border-radius: 0.8rem;
 }
 
-.c4 .c15 {
+.c4 .c5 {
+  color: #242424 !important;
+}
+
+.c4 .c16 {
   width: 100%;
   background: #b1f0b8;
   border: 0.1rem solid #018f1e;
@@ -128,19 +146,19 @@ exports[`<Contact/> should match snapshot 1`] = `
   opacity: 0.5;
 }
 
-.c6 {
+.c7 {
   width: 100%;
   max-width: 66.4rem;
   min-height: 28.8rem;
   margin: 2.4rem 0 3.2rem 0;
 }
 
-.c6 input {
+.c7 input {
   width: 100%;
   padding: 1.4rem 2rem;
   background: #ffff;
   border: 0.1rem solid #DFE3EB;
-  color: #A5A5A5;
+  color: #a3a0a0;
   border-radius: 0.4rem;
   outline: none;
   margin-bottom: 1.6rem;
@@ -148,15 +166,15 @@ exports[`<Contact/> should match snapshot 1`] = `
   transition: all 300ms ease-in-out;
 }
 
-.c6 input:focus {
+.c7 input:focus {
   border: 0.2rem solid #7D00FF;
 }
 
-.c6 input:first-of-type {
+.c7 input:first-of-type {
   margin-right: 1.6rem;
 }
 
-.c6 textarea {
+.c7 textarea {
   padding: 1.4rem 2.4rem;
   max-width: 66.4rem;
   width: 100%;
@@ -164,35 +182,36 @@ exports[`<Contact/> should match snapshot 1`] = `
   resize: none;
   outline: none;
   border: 0.1rem solid #DFE3EB;
+  background: #ffff;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 
-.c6 textarea:focus {
+.c7 textarea:focus {
   border: 0.2rem solid #7D00FF;
 }
 
-.c6 .c8 {
+.c7 .c9 {
   margin-top: 3.2rem;
   max-width: 24rem;
   width: 100%;
 }
 
-.c6 .c8:hover {
+.c7 .c9:hover {
   border: 0.2rem solid #7D00FF;
 }
 
-.c6 .c8:active {
+.c7 .c9:active {
   background: #242424;
   color: #ffff;
   border-color: #ffff;
 }
 
-.c6 .c8 >img {
+.c7 .c9 >img {
   margin-left: 1.4rem;
 }
 
-.c7 {
+.c8 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -204,14 +223,15 @@ exports[`<Contact/> should match snapshot 1`] = `
   justify-content: space-between !important;
 }
 
-.c14 {
+.c15 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
 }
 
-.c10 {
+.c11 {
   max-width: 53.6rem;
+  height: 54.6rem;
   padding: 4.8rem;
   background: #ffff;
   box-shadow: 0rem 1.2rem 2.4rem rgba(10,25,49,0.02);
@@ -219,7 +239,11 @@ exports[`<Contact/> should match snapshot 1`] = `
   margin-left: 2.4rem;
 }
 
-.c11 {
+.c11 .c5 {
+  color: #242424 !important;
+}
+
+.c12 {
   max-width: 44rem;
   max-height: 8rem;
   display: -webkit-box;
@@ -235,18 +259,18 @@ exports[`<Contact/> should match snapshot 1`] = `
   transition: all 300ms ease-in-out;
 }
 
-.c11:hover .c15 {
+.c12:hover .c16 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
   -webkit-text-decoration-color: #ED1CA6;
   text-decoration-color: #ED1CA6;
 }
 
-.c11:hover .c12 {
+.c12:hover .c13 {
   border: 0.2rem solid #ED1CA6;
 }
 
-.c13 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -266,13 +290,13 @@ exports[`<Contact/> should match snapshot 1`] = `
   border-radius: 4.0rem;
 }
 
-.c13 > svg {
+.c14 > svg {
   width: 2.667rem;
   height: 2.133rem;
   color: #ED1CA6;
 }
 
-.c17 {
+.c18 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -282,9 +306,10 @@ exports[`<Contact/> should match snapshot 1`] = `
   -webkit-justify-content: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+  margin-top: 15rem;
 }
 
-.c17 > a {
+.c18 > a {
   width: 4.3rem;
   height: 4.3rem;
   display: -webkit-box;
@@ -306,19 +331,19 @@ exports[`<Contact/> should match snapshot 1`] = `
   transition: all 300ms ease-in-out;
 }
 
-.c17 > a:active {
+.c18 > a:active {
   background: #7D00FF;
 }
 
-.c17 > a:active > svg {
+.c18 > a:active > svg {
   color: #ffff;
 }
 
-.c17 > a:hover {
+.c18 > a:hover {
   border-color: #7D00FF;
 }
 
-.c17 > a > svg {
+.c18 > a > svg {
   width: 2rem;
   height: 2rem;
   color: #242424;
@@ -353,7 +378,7 @@ exports[`<Contact/> should match snapshot 1`] = `
 }
 
 @media (max-width:768px) {
-  .c6 input:first-of-type {
+  .c7 input:first-of-type {
     margin-right: 0;
   }
 }
@@ -363,7 +388,7 @@ exports[`<Contact/> should match snapshot 1`] = `
 }
 
 @media (max-width:768px) {
-  .c7 {
+  .c8 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -371,14 +396,15 @@ exports[`<Contact/> should match snapshot 1`] = `
 }
 
 @media (max-width:768px) {
-  .c10 {
+  .c11 {
+    height: auto;
     margin-top: 3rem;
     margin-left: 0;
   }
 }
 
 @media (max-width:768px) {
-  .c11 {
+  .c12 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -402,6 +428,7 @@ exports[`<Contact/> should match snapshot 1`] = `
 <div>
   <section
     class="c0"
+    id="Contact"
   >
     <div
       class="c1 c2"
@@ -539,16 +566,15 @@ exports[`<Contact/> should match snapshot 1`] = `
       class="c4"
     >
       <h1
-        class="c5"
-        color="#242424"
+        class="c5 c6"
       >
         Let me know here.
       </h1>
       <div
-        class="c6"
+        class="c7"
       >
         <div
-          class="c7"
+          class="c8"
         >
           <input
             id="name"
@@ -581,7 +607,7 @@ exports[`<Contact/> should match snapshot 1`] = `
           rows="5"
         />
         <button
-          class="c8 c9"
+          class="c9 c10"
           sizes="1.6"
         >
           Send message 
@@ -593,11 +619,10 @@ exports[`<Contact/> should match snapshot 1`] = `
       </div>
     </form>
     <div
-      class="c10"
+      class="c11"
     >
       <h1
-        class="c5"
-        color="#242424"
+        class="c5 c6"
       >
         Get In Touch
       </h1>
@@ -605,15 +630,15 @@ exports[`<Contact/> should match snapshot 1`] = `
         class=""
       >
         <div
-          class="c11"
+          class="c12"
         >
           <div
-            class="c12 c13"
+            class="c13 c14"
           >
             <svg
               aria-hidden="true"
               aria-label="email icon"
-              class="c14"
+              class="c15"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -629,23 +654,23 @@ exports[`<Contact/> should match snapshot 1`] = `
             </svg>
           </div>
           <p
-            class="c15 c16"
-            color="#A5A5A5"
+            class="c16 c17"
+            color="#a3a0a0"
             sizes="1.8"
           >
             viniciuFerreira32@gmail.com
           </p>
         </div>
         <div
-          class="c11"
+          class="c12"
         >
           <div
-            class="c12 c13"
+            class="c13 c14"
           >
             <svg
               aria-hidden="true"
               aria-label="telephone icon"
-              class="c14"
+              class="c15"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 16 16"
@@ -657,8 +682,8 @@ exports[`<Contact/> should match snapshot 1`] = `
             </svg>
           </div>
           <p
-            class="c15 c16"
-            color="#A5A5A5"
+            class="c16 c17"
+            color="#a3a0a0"
             sizes="1.8"
           >
             +55 11 95958 2011
@@ -666,7 +691,7 @@ exports[`<Contact/> should match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="c17"
+        class="c18"
       >
         <a
           href="https://github.com/viniciusferreira7"
@@ -674,7 +699,7 @@ exports[`<Contact/> should match snapshot 1`] = `
           <svg
             aria-hidden="true"
             aria-label="github icon"
-            class="c14"
+            class="c15"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 16 16"
@@ -691,7 +716,7 @@ exports[`<Contact/> should match snapshot 1`] = `
           <svg
             aria-hidden="true"
             aria-label="instagram icon"
-            class="c14"
+            class="c15"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 16 16"
@@ -708,7 +733,7 @@ exports[`<Contact/> should match snapshot 1`] = `
           <svg
             aria-hidden="true"
             aria-label="linkedin icon"
-            class="c14"
+            class="c15"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 16 16"
@@ -725,7 +750,7 @@ exports[`<Contact/> should match snapshot 1`] = `
           <svg
             aria-hidden="true"
             aria-label="facebook icon"
-            class="c14"
+            class="c15"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 16 16"

@@ -16,7 +16,7 @@ describe('<Header/>', () => {
     renderTheme(<Header {...data}>Texto</Header>);
 
     expect(screen.getByRole('heading', { name: /,/i })).toBeInTheDocument();
-    expect(screen.getByText(/engineer/i)).toHaveStyle({
+    expect(screen.getByText(/Front/i)).toHaveStyle({
       color: theme.colors.secondaryColor,
     });
   });

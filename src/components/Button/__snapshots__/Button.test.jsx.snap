@@ -39,6 +39,16 @@ exports[`<Button/> should render with default values 1`] = `
   color: #ffff;
 }
 
+.c0:hover > a {
+  color: #ffff;
+}
+
+.c0 > a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #242424;
+}
+
 <div>
   <button
     class="c0"

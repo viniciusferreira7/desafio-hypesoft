@@ -1,38 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Header/> should render link 1`] = `
-.c13 {
+.c14 {
   color: #ffff;
   font-weight: 400;
   font-size: 8rem;
 }
 
-.c13 > span {
+.c14 > strong {
+  color: #ED1CA6;
+}
+
+.c14 > span {
   color: #7D00FF;
   position: relative;
   z-index: 2;
 }
 
-.c13 > span::before {
+.c14 > span::before {
   content: '';
   opacity: 0.2;
   position: absolute;
   z-index: 1;
-  top: 60%;
+  top: 80%;
   left: 0;
   width: 90%;
   height: 3rem;
   background: #35016b;
 }
 
-.c15 {
+.c16 {
   font-size: 2rem;
-  color: #A5A5A5;
+  color: #a3a0a0;
   padding: 3.2rem 0;
   line-height: 3rem;
 }
 
-.c20 {
+.c21 {
   font-size: 1.4rem;
   color: #FFFFF;
   padding: 3.2rem 0;
@@ -55,20 +59,24 @@ exports[`<Header/> should render link 1`] = `
 
 .c0 {
   min-height: 108rem;
+  top: 0;
 }
 
-.c11 {
+.c12 {
   max-width: 75.8rem;
-  margin-top: 23.8rem;
+  padding-top: 20.8rem;
   position: relative;
 }
 
-.c11 > .c12 {
+.c12 > .c13 {
   max-width: 75.8rem;
+  border-radius: 20rem;
+  background: #242424;
 }
 
-.c11 > .c14 {
-  max-width: 67rem;
+.c12 > .c15 {
+  max-width: 48rem;
+  margin-top: 3rem;
 }
 
 .c1 {
@@ -89,16 +97,21 @@ exports[`<Header/> should render link 1`] = `
 }
 
 .c5 {
-  background-image: url(assets/images/Image.png);
+  background-image: url(assets/images/photo/vinicius-photo.jpg);
   background-size: 100% 100%;
-  width: 87.0rem;
+  max-width: 87.0rem;
+  width: 100%;
   height: 92.8rem;
   position: absolute;
+  border-radius: 7rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 7rem;
+  border-bottom-left-radius: 7rem;
   top: 8rem;
   right: 8rem;
 }
 
-.c16 {
+.c17 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -109,7 +122,7 @@ exports[`<Header/> should render link 1`] = `
   gap: 1.6rem;
 }
 
-.c19 {
+.c20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -121,11 +134,11 @@ exports[`<Header/> should render link 1`] = `
   margin-top: 20.2rem;
 }
 
-.c19 > .c14 {
+.c20 > .c15 {
   padding: 0;
 }
 
-.c19 > div {
+.c20 > div {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -133,7 +146,7 @@ exports[`<Header/> should render link 1`] = `
   gap: 1.2rem;
 }
 
-.c19 > div > a {
+.c20 > div > a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -156,18 +169,18 @@ exports[`<Header/> should render link 1`] = `
   transition: all 600ms ease-in-out;
 }
 
-.c19 > div > a > svg {
+.c20 > div > a > svg {
   width: 2rem;
   height: 2rem;
 }
 
-.c19 > div > a:hover {
+.c20 > div > a:hover {
   background: #7D00FF;
   color: #ffff;
   border: none;
 }
 
-.c19 > div > a:hover > svg {
+.c20 > div > a:hover > svg {
   width: 2.5rem;
   height: 2.5rem;
 }
@@ -181,7 +194,34 @@ exports[`<Header/> should render link 1`] = `
 .c8 {
   z-index: 5;
   width: 100%;
-  padding: 2.8rem 15rem 3.8rem 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: red;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 0 0 2%;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 6rem;
+  background: #242424;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.c9 {
+  z-index: 5;
+  width: 3rem;
+  height: 3rem;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
@@ -190,22 +230,25 @@ exports[`<Header/> should render link 1`] = `
   z-index: 6;
   position: fixed;
   top: 2rem;
-  right: 2rem;
+  right: 5rem;
   width: 4rem;
   height: 4rem;
-  background: #242424;
-  color: #ffff;
+  border-radius: 0.8rem;
+  background: #ffff;
+  color: #242424;
   border: none;
   display: none;
   pointer-events: all;
 }
 
 .c6 > svg {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
-.c9 {
+.c10 {
+  max-width: 95rem;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -213,77 +256,40 @@ exports[`<Header/> should render link 1`] = `
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  -webkit-box-pack: right;
-  -webkit-justify-content: right;
-  -ms-flex-pack: right;
-  justify-content: right;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  padding: 2.8rem 0 2.5rem 0;
+  background: #7D00FF;
+  border-bottom-right-radius: 5rem;
 }
 
-.c10 {
+.c11 {
   display: block;
   font-size: 1.6rem;
   text-transform: uppercase;
-  -webkit-text-decoration: none;
-  text-decoration: none;
   padding: 0 4.0rem 2rem 4.0rem;
-  color: #ffff;
+  color: #FFFF;
   position: relative;
   cursor: pointer;
 }
 
-.c10::after {
+.c11::after {
   content: '';
   position: absolute;
   bottom: 1.3rem;
   left: 50%;
   width: 0;
   height: 0.2rem;
-  background: #ffff;
+  background: #FFFF;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 
-.c10:hover::after {
+.c11:hover::after {
   left: 25%;
   width: 50%;
-}
-
-.c17 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 1.2rem 3.2rem;
-  -webkit-letter-spacing: 0.02rem;
-  -moz-letter-spacing: 0.02rem;
-  -ms-letter-spacing: 0.02rem;
-  letter-spacing: 0.02rem;
-  text-transform: uppercase;
-  background: #7D00FF;
-  color: #ffff;
-  font-size: 1.6rem;
-  border-radius: 5px;
-  border: none;
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
-  cursor: pointer;
-  font-weight: 600;
-}
-
-.c17:hover {
-  background: #ffff;
-  color: #242424;
 }
 
 .c18 {
@@ -308,6 +314,54 @@ exports[`<Header/> should render link 1`] = `
   -ms-letter-spacing: 0.02rem;
   letter-spacing: 0.02rem;
   text-transform: uppercase;
+  background: #7D00FF;
+  color: #ffff;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  border: none;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.c18:hover {
+  background: #ffff;
+  color: #242424;
+}
+
+.c18:hover > a {
+  color: #242424;
+}
+
+.c18 > a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #ffff;
+}
+
+.c19 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1.2rem 3.2rem;
+  -webkit-letter-spacing: 0.02rem;
+  -moz-letter-spacing: 0.02rem;
+  -ms-letter-spacing: 0.02rem;
+  letter-spacing: 0.02rem;
+  text-transform: uppercase;
   background: #ffff;
   color: #242424;
   font-size: 1.6rem;
@@ -319,13 +373,23 @@ exports[`<Header/> should render link 1`] = `
   font-weight: 600;
 }
 
-.c18:hover {
+.c19:hover {
   background: #7D00FF;
   color: #ffff;
 }
 
+.c19:hover > a {
+  color: #ffff;
+}
+
+.c19 > a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #242424;
+}
+
 @media (max-width:768px) {
-  .c13 {
+  .c14 {
     font-size: 4.0rem;
   }
 }
@@ -339,13 +403,22 @@ exports[`<Header/> should render link 1`] = `
 @media (max-width:768px) {
   .c0 {
     min-height: 0;
+    padding: 0 2% 5% 2%;
     padding-bottom: 5%;
   }
 }
 
 @media (max-width:768px) {
-  .c11 {
+  .c12 {
     margin-top: 0;
+  }
+}
+
+@media (max-width:768px) {
+  .c12 > .c13 {
+    border-radius: 5rem;
+    padding: 4%;
+    opacity: 0.5;
   }
 }
 
@@ -358,18 +431,32 @@ exports[`<Header/> should render link 1`] = `
 
 @media (max-width:768px) {
   .c5 {
-    display: none;
+    height: 40rem;
+    width: 90%;
+    left: 28%;
+    border-radius: 5rem;
+    -webkit-transform: translateX(-25%);
+    -ms-transform: translateX(-25%);
+    transform: translateX(-25%);
   }
 }
 
 @media (max-width:768px) {
-  .c19 {
+  .c20 {
     margin-top: 10rem;
   }
 }
 
 @media (max-width:768px) {
   .c8 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: space-around;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: space-around;
+    justify-content: space-around;
+    text-align: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -398,21 +485,30 @@ exports[`<Header/> should render link 1`] = `
 }
 
 @media (max-width:768px) {
-  .c9 {
+  .c10 {
     -webkit-flex-flow: column wrap;
     -ms-flex-flow: column wrap;
     flex-flow: column wrap;
     -webkit-align-content: center;
     -ms-flex-line-pack: center;
     align-content: center;
+    padding: 0;
+    background: none;
   }
 }
 
 @media (max-width:768px) {
-  .c10 {
+  .c11 {
     padding: 4.0rem 0;
     font-size: 2.0rem;
     color: #ffff;
+  }
+}
+
+@media (max-width:768px) {
+  .c11::after {
+    display: none;
+    background: #ffff;
   }
 }
 
@@ -587,70 +683,124 @@ exports[`<Header/> should render link 1`] = `
       <nav
         class="c9"
       >
-        <a
-          class="c10"
+        <svg
+          aria-hidden="true"
+          class="c7"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          about
-        </a>
-        <a
-          class="c10"
+          <path
+            d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+          />
+        </svg>
+      </nav>
+      <nav
+        class="c10"
+      >
+        <div
+          class="c11"
         >
-          stacks
-        </a>
-        <a
-          class="c10"
+          <a
+            activeclasse="active"
+          >
+            about
+          </a>
+        </div>
+        <div
+          class="c11"
         >
-          works
-        </a>
-        <a
-          class="c10"
+          <a
+            activeclasse="active"
+          >
+            stacks
+          </a>
+        </div>
+        <div
+          class="c11"
         >
-          contact
-        </a>
+          <a
+            activeclasse="active"
+          >
+            works
+          </a>
+        </div>
+        <div
+          class="c11"
+        >
+          <a
+            activeclasse="active"
+          >
+            Testimonial
+          </a>
+        </div>
+        <div
+          class="c11"
+        >
+          <a
+            activeclasse="active"
+          >
+            contact
+          </a>
+        </div>
       </nav>
     </nav>
     <div
-      class="c11"
+      class="c12"
     >
       <h1
-        class="c12 c13"
-        color="#ffff"
+        class="c13 c14"
       >
-        Hello, I’m John, a
-        <br />
+        How are you, my name is Vinicius I'm a
         <span>
-          Software Engineer.
+           
+          Front End Developer
         </span>
       </h1>
       <p
-        class="c14 c15"
-        color="#A5A5A5"
+        class="c15 c16"
+        color="#a3a0a0"
         sizes="2"
       >
-        Product Designer, UI/UX Designer, and developer based in Brazil. Over the past 17 years, as an art director and designer, I’ve worked with big companies and up-and-coming startups.
+        I'm looking for an opportunity to get into the development area,
+          despite not having professional experience, I have several projects
+          with a repository on GitHub.
       </p>
       <div
-        class="c16"
+        class="c17"
       >
-        <button
-          class="c17"
-          sizes="1.6"
-        >
-          Hire Me
-        </button>
         <button
           class="c18"
           sizes="1.6"
         >
-          view work
+          <a
+            href="https://www.linkedin.com/in/vinicius-ferreira-84b68b162/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Hire Me
+          </a>
+        </button>
+        <button
+          class="c19"
+          sizes="1.6"
+        >
+          <a
+            href="https://github.com/viniciusferreira7"
+            rel="noreferrer"
+            target="_blank"
+          >
+            View Work
+          </a>
         </button>
       </div>
     </div>
     <div
-      class="c19"
+      class="c20"
     >
       <p
-        class="c14 c20"
+        class="c15 c21"
         color="#FFFFF"
         sizes="1.4"
       >

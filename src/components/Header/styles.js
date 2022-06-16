@@ -35,12 +35,15 @@ ${({ theme }) => css`
     @media ${theme.media.lteMedium}{
       border-radius: 5rem;
       padding: 4%;
+      opacity: 0.5;
     }
   }
 
 
   > ${TextComponent}{
     max-width: 48rem;
+    margin-top: 3rem;
+
   }
   `}
 `;

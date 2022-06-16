@@ -26,7 +26,7 @@ export const Navigation = ({ links_1, links_2, links_3, links_4, links_5 }) => {
         )}
       </Styled.Button>
       <Styled.Container visible={visible} onClick={() => setVisible(false)}>
-        {state.colors.white === '#FFFF' ? (
+        {state.colors.white == '#FFFF' ? (
           <Styled.ButtonTheme onClick={() => dispatch({ type: 'lightTheme' })}>
             <Moon />
           </Styled.ButtonTheme>
@@ -38,7 +38,6 @@ export const Navigation = ({ links_1, links_2, links_3, links_4, links_5 }) => {
         <Styled.NavLinks>
           <Styled.Links>
             <Link
-              activeclasse="active"
               to={'About'}
               spy={true}
               smooth={true}
@@ -50,7 +49,6 @@ export const Navigation = ({ links_1, links_2, links_3, links_4, links_5 }) => {
           </Styled.Links>
           <Styled.Links>
             <Link
-              activeclasse="active"
               to={'Stack'}
               spy={true}
               smooth={true}
@@ -62,7 +60,6 @@ export const Navigation = ({ links_1, links_2, links_3, links_4, links_5 }) => {
           </Styled.Links>
           <Styled.Links>
             <Link
-              activeclasse="active"
               to={'Works'}
               spy={true}
               smooth={true}
@@ -74,7 +71,6 @@ export const Navigation = ({ links_1, links_2, links_3, links_4, links_5 }) => {
           </Styled.Links>
           <Styled.Links>
             <Link
-              activeclasse="active"
               to={'Testimonial'}
               spy={true}
               smooth={true}
@@ -86,7 +82,6 @@ export const Navigation = ({ links_1, links_2, links_3, links_4, links_5 }) => {
           </Styled.Links>
           <Styled.Links>
             <Link
-              activeclasse="active"
               to={'Contact'}
               spy={true}
               smooth={true}

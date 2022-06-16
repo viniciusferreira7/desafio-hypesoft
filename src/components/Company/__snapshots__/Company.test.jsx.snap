@@ -139,7 +139,7 @@ exports[`<Company/> should match snapshot 1`] = `
       <strong>
         600 commits on GitHub
       </strong>
-      , using various technologies.
+      , using multiple technologies where these companies also use.
     </h1>
     <div
       class="c3"

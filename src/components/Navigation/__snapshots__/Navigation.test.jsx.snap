@@ -10,7 +10,34 @@ exports[`<Navigation/> should match snapshot 1`] = `
 .c2 {
   z-index: 5;
   width: 100%;
-  padding: 2.8rem 15rem 3.8rem 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: red;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 0 0 2%;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 6rem;
+  background: #242424;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.c3 {
+  z-index: 5;
+  width: 3rem;
+  height: 3rem;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
@@ -19,22 +46,25 @@ exports[`<Navigation/> should match snapshot 1`] = `
   z-index: 6;
   position: fixed;
   top: 2rem;
-  right: 2rem;
+  right: 5rem;
   width: 4rem;
   height: 4rem;
-  background: #242424;
-  color: #ffff;
+  border-radius: 0.8rem;
+  background: #ffff;
+  color: #242424;
   border: none;
   display: none;
   pointer-events: all;
 }
 
 .c0 > svg {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
-.c3 {
+.c4 {
+  max-width: 95rem;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -42,43 +72,52 @@ exports[`<Navigation/> should match snapshot 1`] = `
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  -webkit-box-pack: right;
-  -webkit-justify-content: right;
-  -ms-flex-pack: right;
-  justify-content: right;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  padding: 2.8rem 0 2.5rem 0;
+  background: #7D00FF;
+  border-bottom-right-radius: 5rem;
 }
 
-.c4 {
+.c5 {
   display: block;
   font-size: 1.6rem;
   text-transform: uppercase;
-  -webkit-text-decoration: none;
-  text-decoration: none;
   padding: 0 4.0rem 2rem 4.0rem;
-  color: #ffff;
+  color: #FFFF;
   position: relative;
   cursor: pointer;
 }
 
-.c4::after {
+.c5::after {
   content: '';
   position: absolute;
   bottom: 1.3rem;
   left: 50%;
   width: 0;
   height: 0.2rem;
-  background: #ffff;
+  background: #FFFF;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 
-.c4:hover::after {
+.c5:hover::after {
   left: 25%;
   width: 50%;
 }
 
 @media (max-width:768px) {
   .c2 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: space-around;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: space-around;
+    justify-content: space-around;
+    text-align: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -107,21 +146,30 @@ exports[`<Navigation/> should match snapshot 1`] = `
 }
 
 @media (max-width:768px) {
-  .c3 {
+  .c4 {
     -webkit-flex-flow: column wrap;
     -ms-flex-flow: column wrap;
     flex-flow: column wrap;
     -webkit-align-content: center;
     -ms-flex-line-pack: center;
     align-content: center;
+    padding: 0;
+    background: none;
   }
 }
 
 @media (max-width:768px) {
-  .c4 {
+  .c5 {
     padding: 4.0rem 0;
     font-size: 2.0rem;
     color: #ffff;
+  }
+}
+
+@media (max-width:768px) {
+  .c5::after {
+    display: none;
+    background: #ffff;
   }
 }
 
@@ -154,26 +202,65 @@ exports[`<Navigation/> should match snapshot 1`] = `
     <nav
       class="c3"
     >
-      <a
-        class="c4"
+      <svg
+        aria-hidden="true"
+        class="c1"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 16 16"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        link 1
-      </a>
-      <a
-        class="c4"
+        <path
+          d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+        />
+      </svg>
+    </nav>
+    <nav
+      class="c4"
+    >
+      <div
+        class="c5"
       >
-        link 2
-      </a>
-      <a
-        class="c4"
+        <a
+          activeclasse="active"
+        >
+          link 1
+        </a>
+      </div>
+      <div
+        class="c5"
       >
-        link 3
-      </a>
-      <a
-        class="c4"
+        <a
+          activeclasse="active"
+        >
+          link 2
+        </a>
+      </div>
+      <div
+        class="c5"
       >
-        link 4
-      </a>
+        <a
+          activeclasse="active"
+        >
+          link 3
+        </a>
+      </div>
+      <div
+        class="c5"
+      >
+        <a
+          activeclasse="active"
+        >
+          link 4
+        </a>
+      </div>
+      <div
+        class="c5"
+      >
+        <a
+          activeclasse="active"
+        />
+      </div>
     </nav>
   </nav>
 </div>
