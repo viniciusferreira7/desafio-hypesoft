@@ -14,6 +14,7 @@ ${({ theme }) => css`
   transition: all 500ms ease-in-out;
   overflow-x: auto;
   overflow-y: hidden;
+  padding: 0 2% 0 0;
   cursor: pointer;
 
   @media ${theme.media.lteMedium}{
