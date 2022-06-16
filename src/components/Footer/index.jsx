@@ -8,7 +8,7 @@ export const Footer = () => {
     <Styled.Container>
       <img src="assets/images/logo/hypesoft-logo.png" alt="hypesoft logo" />
       <TextComponent lineHeight={0} sizes={1.4} color={theme.colors.gray_500}>
-        Made with <span>♥</span> by John and <strong>Hypesoft</strong>
+        Made with <span>♥</span> by Vinicius and <strong>Hypesoft</strong>
       </TextComponent>
     </Styled.Container>
   );

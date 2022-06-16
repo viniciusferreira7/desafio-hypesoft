@@ -3,7 +3,7 @@
 exports[`<Footer/> should match snapshot 1`] = `
 .c2 {
   font-size: 1.4rem;
-  color: #A5A5A5;
+  color: #a3a0a0;
   padding: 3.2rem 0;
   line-height: 0rem;
 }
@@ -19,6 +19,8 @@ exports[`<Footer/> should match snapshot 1`] = `
 .c0 > img {
   width: 26.3rem;
   height: 5.9rem;
+  border-radius: 3rem;
+  background: #242424;
 }
 
 .c0 .c1 {
@@ -50,14 +52,14 @@ exports[`<Footer/> should match snapshot 1`] = `
     />
     <p
       class="c1 c2"
-      color="#A5A5A5"
+      color="#a3a0a0"
       sizes="1.4"
     >
       Made with 
       <span>
         ♥
       </span>
-       by John and 
+       by Vinicius and 
       <strong>
         Hypesoft
       </strong>

@@ -99,15 +99,6 @@ describe('<Heading/>', () => {
     });
   });
 
-  it('should render with color', () => {
-    renderTheme(<Heading color="#FFFFF">Texto</Heading>);
-    const heading = screen.getByRole('heading', { name: 'Texto' });
-
-    expect(heading).toHaveStyle({
-      color: '#FFFFF',
-    });
-  });
-
   it('should render correct heading element', () => {
     const { container } = renderTheme(<Heading as="h6">Texto</Heading>);
     // const heading = screen.getByRole('heading', { name: 'Texto' });

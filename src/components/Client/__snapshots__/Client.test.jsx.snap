@@ -67,7 +67,7 @@ exports[`<Client/> should match snapshot 1`] = `
   border-radius: calc(5.2rem / 2);
   background-image: url(assets/images/photo/cleber-photo.jpg);
   background-size: cover;
-  background-color: #A5A5A5;
+  background-color: #a3a0a0;
   margin: 2.4rem;
 }
 

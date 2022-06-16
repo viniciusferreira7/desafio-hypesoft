@@ -7,6 +7,10 @@ exports[`<Testimonial/> should match snapshot 1`] = `
   font-size: 4.0rem;
 }
 
+.c2 > strong {
+  color: #ED1CA6;
+}
+
 .c2 > span {
   color: #7D00FF;
   position: relative;
@@ -18,7 +22,7 @@ exports[`<Testimonial/> should match snapshot 1`] = `
   opacity: 0.2;
   position: absolute;
   z-index: 1;
-  top: 60%;
+  top: 80%;
   left: 0;
   width: 90%;
   height: 3rem;
@@ -39,7 +43,14 @@ exports[`<Testimonial/> should match snapshot 1`] = `
   line-height: 2rem;
 }
 
-.c18 {
+.c17 {
+  font-size: 1.4rem;
+  color: #a3a0a0;
+  padding: 3.2rem 0;
+  line-height: 2rem;
+}
+
+.c19 {
   font-size: 3.2rem;
   color: #242424;
   padding: 3.2rem 0;
@@ -98,7 +109,7 @@ exports[`<Testimonial/> should match snapshot 1`] = `
   border-radius: calc(5.2rem / 2);
   background-image: url(assets/images/photo/cleber-photo.jpg);
   background-size: cover;
-  background-color: #A5A5A5;
+  background-color: #a3a0a0;
   margin: 2.4rem;
 }
 
@@ -108,7 +119,7 @@ exports[`<Testimonial/> should match snapshot 1`] = `
   border-radius: calc(5.2rem / 2);
   background-image: url(assets/images/photo/gustavo-photo.jpg);
   background-size: cover;
-  background-color: #A5A5A5;
+  background-color: #a3a0a0;
   margin: 2.4rem;
 }
 
@@ -123,7 +134,8 @@ exports[`<Testimonial/> should match snapshot 1`] = `
 }
 
 .c0 {
-  padding-top: 22rem;
+  margin-top: 22rem;
+  padding-top: 5rem;
 }
 
 .c0 > .c1 {
@@ -199,7 +211,7 @@ exports[`<Testimonial/> should match snapshot 1`] = `
   margin-right: 1.067rem;
 }
 
-.c17 {
+.c18 {
   position: absolute;
   right: 2.42rem;
 }
@@ -212,7 +224,8 @@ exports[`<Testimonial/> should match snapshot 1`] = `
 
 @media (max-width:768px) {
   .c0 {
-    padding-top: 3rem;
+    margin-top: 3rem;
+    padding-top: 0;
   }
 }
 
@@ -262,11 +275,11 @@ exports[`<Testimonial/> should match snapshot 1`] = `
 }
 
 @media (max-width:768px) {
-  .c17 {
+  .c18 {
     right: 5rem;
   }
 
-  .c17 >img {
+  .c18 >img {
     width: 2.0rem;
     height: 4.0rem;
   }
@@ -275,10 +288,10 @@ exports[`<Testimonial/> should match snapshot 1`] = `
 <div>
   <div
     class="c0"
+    id="Testimonial"
   >
     <h1
       class="c1 c2"
-      color="#ffff"
     >
       test
        
@@ -365,8 +378,8 @@ exports[`<Testimonial/> should match snapshot 1`] = `
               src="assets/images/start.png"
             />
             <p
-              class="c10 c12"
-              color="#A5A5A5"
+              class="c10 c17"
+              color="#a3a0a0"
               sizes="1.4"
             >
               5
@@ -374,7 +387,7 @@ exports[`<Testimonial/> should match snapshot 1`] = `
             </p>
           </div>
           <div
-            class="c17"
+            class="c18"
           >
             <img
               alt="qoute 1"
@@ -387,11 +400,12 @@ exports[`<Testimonial/> should match snapshot 1`] = `
           </div>
         </div>
         <p
-          class="c10 c18"
+          class="c10 c19"
           color="#242424"
           sizes="3.2"
         >
-          “If you're looking for someone who will challenge your UX/UI thinking and really cut to the core of what's important for users, then Jesse is your man. On top of that, he brings a level of enthusiasm to the craft that's energizing for everyone who works with him.”
+          “I had the pleasure of working with Vinicius, and I can only say that if you are looking for an agile and excellent problem-solving profession this guy is Vinicius!
+    ”
         </p>
       </div>
     </div>

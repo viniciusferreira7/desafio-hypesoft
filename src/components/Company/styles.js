@@ -5,16 +5,18 @@ export const Container = styled.section`
 ${({ theme }) => css`
   width: 100%;
   display: flex;
-  padding-top: 20rem;
+  margin-top: 20rem;
   justify-content: space-around;
 
   @media ${theme.media.lteMedium}{
     flex-direction: column;
     text-align: center;
+    margin-top: 4rem;
   }
 
   ${Heading}{
-    width: 312px;
+    max-width: 31.2rem;
+    width: 100%;
 
     > span{
       color:#bc199c;

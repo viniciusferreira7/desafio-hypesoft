@@ -21,7 +21,18 @@ ${({ theme, background, sizes }) => css`
 
 &:hover {
   background:${!background ? theme.colors.secondaryColor : theme.colors.white};
-  color:${!background ? theme.colors.white : theme.colors.primaryColor};
+  color:${background ? theme.colors.primaryColor : theme.colors.white};
+
+  > a{
+    color:${!background ? theme.colors.white : theme.colors.primaryColor};
+  }
+
 }
+
+  > a{
+    text-decoration: none;
+    color:${background ? theme.colors.white : theme.colors.primaryColor};
+  }
+
 `}
 `;

@@ -1,7 +1,7 @@
 export default {
   srcImg: 'assets/images/about-image.png',
-  title: 'Software Engineer and Infrastructure specialist based in Brazil.',
-  text: 'Morbi quam velit, euismod in imperdiet vitae, elementum et elit. Nunc finibus, felis sit amet sollicitudin sollicitudin, nisi magna feugiat enim, in maximus urna enim ac tortor. Nunc in volutpat ipsum, molestie commodo odio. Quisque auctor nisi mi. Aenean venenatis sapien et interdum interdum.',
-  years: '17+',
-  projects: '325+',
+  title: 'Front End developer focused on React and Node.js.',
+  text: `I'm a Developer for over 1 year, focusing my knowledge on Front End Development,`,
+  years: '1+',
+  projects: '30+',
 };

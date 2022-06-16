@@ -9,12 +9,25 @@ export const Container = styled.nav`
 ${({ theme, visible }) => css`
     z-index: 5;
     width:100%;
-    padding:2.8rem 2rem 3.8rem 0;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: red;
+    align-items: center;
+    padding:0 0 0 2%;
     border-bottom-color: ${theme.colors.mediumGray};
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 6rem;
+    background: ${theme.colors.primaryColor};
     transition: all 300ms ease-in-out;
 
 
     @media ${theme.media.lteMedium}{
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: center;
       position: fixed;
       top: 0;
       left: 0;
@@ -25,6 +38,16 @@ ${({ theme, visible }) => css`
       ${visible && menuVisible(theme)}
     }
 `}
+
+`;
+
+export const ButtonTheme = styled.nav`
+${() => css`
+    z-index: 5;
+    width:3rem;
+    height: 3rem;
+    transition: all 300ms ease-in-out;
+`}
 `;
 
 export const Button = styled.button`
@@ -32,20 +55,19 @@ ${({ theme, visible }) => css`
   z-index:6;
   position: fixed;
   top: 2rem;
-  right:2rem;
+  right:5rem;
   width:4rem;
   height:4rem;
-  background: ${
-    visible ? theme.colors.secondaryColor : theme.colors.primaryColor
-  };
-  color:${theme.colors.white};
+  border-radius: 0.8rem;
+  background: ${visible ? theme.colors.primaryColor : theme.colors.white};
+  color:${visible ? theme.colors.white : theme.colors.primaryColor};
   border:none;
   display:none;
   pointer-events: ${visible ? 'none' : 'all'};
 
   > svg{
-    width:2.5rem;
-    height:2.5rem;
+    width:3.5rem;
+    height:3.5rem;
   }
 
   @media ${theme.media.lteMedium}{
@@ -57,14 +79,21 @@ ${({ theme, visible }) => css`
 
 export const NavLinks = styled.nav`
 ${({ theme }) => css`
-display:flex;
-flex-flow:row wrap;
-justify-content: right;
+  max-width: 95rem;
+  width: 100%;
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: left;
+  padding: 2.8rem 0 2.5rem 0;
+  background:${theme.colors.secondaryColor} ;
+  border-bottom-right-radius: 5rem;
 
-@media ${theme.media.lteMedium}{
-  flex-flow: column wrap;
-  align-content: center;
-}
+  @media ${theme.media.lteMedium}{
+    flex-flow: column wrap;
+    align-content: center;
+    padding: 0;
+    background:none ;
+  }
 
 `}`;
 
@@ -74,7 +103,7 @@ ${({ theme, visible }) => css`
   font-size: ${theme.font.sizes.small};
   text-transform: uppercase;
   padding: 0 4.0rem 2rem 4.0rem;
-  color:${theme.colors.white};
+  color:#FFFF;
   position:relative;
   cursor: pointer;
 
@@ -92,11 +121,12 @@ ${({ theme, visible }) => css`
     left:50%;
     width:0;
     height:0.2rem;
-    background:${theme.colors.white};
+    background:#FFFF;
     transition: all 300ms ease-in-out;
 
     @media ${theme.media.lteMedium}{
       display: none;
+      background: ${theme.colors.white};
     }
   }
 

@@ -8,7 +8,6 @@ export default {
     as: 'h1',
     size: 'big',
     bold: false,
-    color: '#FFFF',
   },
   argsTypes: {
     children: { type: 'string' },

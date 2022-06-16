@@ -1,16 +1,18 @@
 import P from 'prop-types';
-import React from 'react';
+import React, { useContext } from 'react';
 import * as Styled from './styles';
 import { TextComponent } from '../TextComponent';
-import { theme } from '../../styles/theme';
+import { ThemeContext } from '../../ToggleThemeContext/index.';
 
 export const PostCard = ({ srcImg, subTitle, link }) => {
+  const [state] = useContext(ThemeContext);
+
   return (
     <Styled.Container>
       <Styled.SrcImg srcImg={srcImg}></Styled.SrcImg>
       <Styled.Info>
         <TextComponent
-          color={theme.colors.primaryColor}
+          color={state.colors.primaryColor}
           sizes={2.4}
           lineHeight={4}
         >

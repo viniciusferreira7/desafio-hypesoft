@@ -1,5 +1,5 @@
 import P from 'prop-types';
-import React from 'react';
+import React, { useContext } from 'react';
 import { Email } from '@styled-icons/material-outlined/Email';
 import {
   Telephone,
@@ -9,15 +9,17 @@ import {
   Instagram,
 } from '@styled-icons/bootstrap';
 import * as Styled from './styles';
-import { theme } from '../../styles/theme';
 import { Heading } from '../Heading';
 import { TextComponent } from '../TextComponent';
 import data from './data';
+import { ThemeContext } from '../../ToggleThemeContext/index.';
 
 export const ContactInfo = ({ email, phone }) => {
+  const [state] = useContext(ThemeContext);
+
   return (
     <Styled.Container>
-      <Heading bold color={theme.colors.primaryColor} size="medium">
+      <Heading bold size="medium">
         Get In Touch
       </Heading>
       <Styled.Group>
@@ -26,7 +28,7 @@ export const ContactInfo = ({ email, phone }) => {
             <Email aria-label="email icon" />
           </Styled.Icon>
           <TextComponent
-            colors={theme.colors.primaryColor}
+            colors={state.colors.primaryColor}
             sizes={1.8}
             lineHeight={2.8}
           >
@@ -38,7 +40,7 @@ export const ContactInfo = ({ email, phone }) => {
             <Telephone aria-label="telephone icon" />
           </Styled.Icon>
           <TextComponent
-            colors={theme.colors.primaryColor}
+            colors={state.colors.primaryColor}
             sizes={1.8}
             lineHeight={2.8}
           >

@@ -12,8 +12,8 @@ ${({ theme }) => css`
 
   ${GridDot}{
     position: absolute;
-    top: 16%;
-    right:12%;
+    top: 9%;
+    right:9%;
     transform: rotate(-90deg);
     opacity: 0.3;
 

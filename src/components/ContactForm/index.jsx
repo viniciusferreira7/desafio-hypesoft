@@ -1,6 +1,5 @@
 import emailjs from '@emailjs/browser';
 import React, { useRef, useState } from 'react';
-import { theme } from '../../styles/theme';
 import { Button } from '../Button';
 import { Heading } from '../Heading';
 import { TextComponent } from '../TextComponent';
@@ -42,7 +41,7 @@ export const ContactForm = () => {
           The email has been sent
         </TextComponent>
       )}
-      <Heading bold color={theme.colors.primaryColor} size="medium">
+      <Heading bold size="medium">
         Let me know here.
       </Heading>
       <Styled.GroupInput>

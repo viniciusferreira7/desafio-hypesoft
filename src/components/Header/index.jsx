@@ -28,13 +28,29 @@ export const Header = ({ srcImg, links, title }) => {
           <span> {title[1]}</span>
         </Heading>
         <TextComponent sizes={2} lineHeight={3}>
-          Product Designer, UI/UX Designer, and developer based in Brazil. Over
-          the past 17 years, as an art director and designer, I’ve worked with
-          big companies and up-and-coming startups.
+          {`I'm looking for an opportunity to get into the development area,
+          despite not having professional experience, I have several projects
+          with a repository on GitHub.`}
         </TextComponent>
         <Styled.ButtonGroup>
-          <Button background>Hire Me</Button>
-          <Button>view work</Button>
+          <Button background>
+            <a
+              href="https://www.linkedin.com/in/vinicius-ferreira-84b68b162/"
+              target={'_blank'}
+              rel="noreferrer"
+            >
+              Hire Me
+            </a>
+          </Button>
+          <Button>
+            <a
+              href="https://github.com/viniciusferreira7"
+              target={'_blank'}
+              rel="noreferrer"
+            >
+              View Work
+            </a>
+          </Button>
         </Styled.ButtonGroup>
       </Styled.Info>
       <Styled.Follow>

@@ -4,10 +4,11 @@ import { Title as Heading } from '../Heading/styles';
 export const Container = styled.div`
 ${({ theme }) => css`
   width: 100%;
-  padding-top: 18rem;
+  margin-top: 18rem;
+  padding-top: 10rem;
 
   @media ${theme.media.lteMedium}{
-    padding-top:5.5rem ;
+    margin-top:5.5rem ;
   }
 
 

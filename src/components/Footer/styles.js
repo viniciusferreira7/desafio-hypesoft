@@ -17,6 +17,12 @@ ${({ theme }) => css`
   > img{
     width:26.3rem;
     height: 5.9rem;
+    border-radius: 3rem;
+    background: ${
+      theme.colors.white === '#242424'
+        ? theme.colors.white
+        : theme.colors.primaryColor
+    };
   }
 
   ${TextComponent}{

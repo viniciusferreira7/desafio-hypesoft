@@ -7,7 +7,8 @@ export const Company = () => {
   return (
     <Styled.Container>
       <Heading size="medium">
-        I worked with <strong>289+</strong> Companies all over the World
+        I have over <strong>600 commits on GitHub</strong>, using multiple
+        technologies where these companies also use.
       </Heading>
       <Styled.ContainerLogo>
         {data.srcLogo.map((srcLogo) => (

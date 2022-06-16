@@ -7,6 +7,10 @@ exports[`<Heading/> should match snapshot 1`] = `
   font-size: 8rem;
 }
 
+.c0 > strong {
+  color: #ED1CA6;
+}
+
 .c0 > span {
   color: #7D00FF;
   position: relative;
@@ -18,7 +22,7 @@ exports[`<Heading/> should match snapshot 1`] = `
   opacity: 0.2;
   position: absolute;
   z-index: 1;
-  top: 60%;
+  top: 80%;
   left: 0;
   width: 90%;
   height: 3rem;
@@ -34,7 +38,6 @@ exports[`<Heading/> should match snapshot 1`] = `
 <div>
   <h6
     class="c0"
-    color="#ffff"
   >
     Texto
   </h6>

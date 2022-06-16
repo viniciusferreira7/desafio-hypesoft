@@ -30,10 +30,12 @@ ${({ theme }) => css`
       height: 9.6rem;
       margin: 0 auto;
 
+
       @media ${theme.media.lteMedium}{
         width: 100%;
         text-align: center;
         height: 15rem;
+        margin-bottom: 7rem;
       }
 
       > span{
@@ -49,11 +51,10 @@ ${({ theme }) => css`
       width: 17.7rem;
       height: 5.6rem;
       margin: 0 auto;
-      margin-top: 3.2rem;
+      margin-top: 7.2rem;
 
-      > img{
-        width: ;
-        margin-left: 0.9rem;
+      > a{
+        margin-right: 0.9rem;
       }
   }
 `}

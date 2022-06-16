@@ -1,9 +1,11 @@
 import styled, { css } from 'styled-components';
+import { Title as Heading } from '../Heading/styles';
 import { Container as TextComponent } from '../TextComponent/styles';
 
 export const Container = styled.div`
 ${({ theme }) => css`
   max-width:53.6rem;
+  height:54.6rem;
   padding: 4.8rem;
   background: ${theme.colors.white};
   box-shadow: 0rem 1.2rem 2.4rem rgba(10, 25, 49, 0.02);
@@ -11,9 +13,15 @@ ${({ theme }) => css`
   margin-left: 2.4rem;
 
   @media ${theme.media.lteMedium}{
+    height: auto;
     margin-top: 3rem;
     margin-left: 0;
   }
+
+  ${Heading}{
+    color: ${theme.colors.primaryColor} !important;
+  }
+
   `}
 `;
 
@@ -85,6 +93,7 @@ ${({ theme }) => css`
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+  margin-top: 15rem;
 
   > a{
     width:4.3rem;

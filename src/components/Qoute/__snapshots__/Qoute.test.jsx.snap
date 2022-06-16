@@ -3,7 +3,7 @@
 exports[`<Qoute/> should match snapshot 1`] = `
 .c4 {
   font-size: 1.4rem;
-  color: #A5A5A5;
+  color: #a3a0a0;
   padding: 3.2rem 0;
   line-height: 2rem;
 }
@@ -112,7 +112,7 @@ exports[`<Qoute/> should match snapshot 1`] = `
         />
         <p
           class="c3 c4"
-          color="#A5A5A5"
+          color="#a3a0a0"
           sizes="1.4"
         >
           5

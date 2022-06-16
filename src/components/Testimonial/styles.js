@@ -4,10 +4,12 @@ import { Container as Client } from '../Client/styles';
 
 export const Container = styled.div`
 ${({ theme }) => css`
-  padding-top: 22rem;
+  margin-top: 22rem;
+  padding-top: 5rem;
 
   @media ${theme.media.lteMedium}{
-    padding-top: 3rem;
+    margin-top: 3rem;
+    padding-top: 0;
   }
 
 

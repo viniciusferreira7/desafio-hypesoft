@@ -32,10 +32,14 @@ const mediaFont = (theme) => css`
 `;
 
 export const Title = styled.h1`
-  ${({ theme, size, bold, color }) => css`
-    color: ${color};
+  ${({ theme, size, bold }) => css`
+    color: ${theme.colors.white};
     font-weight:${bold ? 500 : 400};
     ${titleSize[size](theme)};
+
+    > strong{
+      color:#ED1CA6;
+    }
 
     > span {
       color: ${theme.colors.secondaryColor};
@@ -48,7 +52,7 @@ export const Title = styled.h1`
       opacity: 0.2;
       position: absolute;
       z-index: 1;
-      top: 60%;
+      top: 80%;
       left: 0;
       width: 90%;
       height: 3rem;

@@ -3,13 +3,17 @@ import { Container as Button } from '../Button/styles';
 import { Container as TextContainer } from '../TextComponent/styles';
 
 export const Container = styled.section`
-${() => css`
+${({ theme }) => css`
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 2.8rem;
   grid-template-areas:'SrcImg' 'Description';
   padding-top: 10rem;
+
+  @media ${theme.media.lteMedium}{
+    grid-template-columns: 1fr;
+  }
 `}
 `;
 
@@ -25,13 +29,15 @@ ${({ theme, srcImg }) => css`
   box-shadow: 3.2rem 3.2rem   ${theme.colors.white};
 
   @media ${theme.media.lteMedium}{
-    display: none;
+    width: 80%;
+    height: 30rem;
+    margin-bottom: 6rem;
   }
 `}
 `;
 
 export const Description = styled.div`
-${() => css`
+${({ theme }) => css`
   grid-area: 'Description';
   max-width: 67.2rem;
 
@@ -39,8 +45,12 @@ ${() => css`
     width: 16.2rem;
     height: 5.6rem;
 
-    > img{
-      margin-left: 1.1rem;
+    @media ${theme.media.lteMedium}{
+    margin: 0 auto;
+  }
+
+    > a{
+      margin-right: 1.1rem;
     }
   }
 `}
@@ -59,6 +69,7 @@ ${({ theme }) => css`
   @media ${theme.media.lteMedium}{
     flex-direction: column;
     padding-bottom: 3.2rem;
+    align-items: center;
   }
 `}
 `;

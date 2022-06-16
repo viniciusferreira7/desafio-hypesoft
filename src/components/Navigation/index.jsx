@@ -1,12 +1,16 @@
 import P from 'prop-types';
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-scroll';
 import { Menu as MenuIcon } from '@styled-icons/material-outlined/Menu';
 import { Close as CloseIcon } from '@styled-icons/material-outlined/Close';
+import { Moon } from '@styled-icons/bootstrap/Moon';
 import * as Styled from './styles';
+import { ThemeContext } from '../../ToggleThemeContext/index.';
+import { SunFill } from '@styled-icons/bootstrap';
 
 export const Navigation = ({ links_1, links_2, links_3, links_4, links_5 }) => {
   const [visible, setVisible] = useState(false);
+  const [state, dispatch] = useContext(ThemeContext);
 
   return (
     <>
@@ -22,6 +26,15 @@ export const Navigation = ({ links_1, links_2, links_3, links_4, links_5 }) => {
         )}
       </Styled.Button>
       <Styled.Container visible={visible} onClick={() => setVisible(false)}>
+        {state.colors.white === '#FFFF' ? (
+          <Styled.ButtonTheme onClick={() => dispatch({ type: 'lightTheme' })}>
+            <Moon />
+          </Styled.ButtonTheme>
+        ) : (
+          <Styled.ButtonTheme onClick={() => dispatch({ type: 'darkTheme' })}>
+            <SunFill />
+          </Styled.ButtonTheme>
+        )}
         <Styled.NavLinks>
           <Styled.Links>
             <Link
@@ -38,7 +51,7 @@ export const Navigation = ({ links_1, links_2, links_3, links_4, links_5 }) => {
           <Styled.Links>
             <Link
               activeclasse="active"
-              to={'About'}
+              to={'Stack'}
               spy={true}
               smooth={true}
               offset={-70}

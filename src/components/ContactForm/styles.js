@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { Container as Button } from '../Button/styles';
+import { Title as Heading } from '../Heading/styles';
 import { Container as TextComponent } from '../TextComponent/styles';
 
 export const Container = styled.form`
@@ -14,6 +15,10 @@ ${({ theme }) => css`
   @media ${theme.media.lteMedium}{
     padding: 2rem;
     margin-top: 3rem;
+  }
+
+  ${Heading}{
+    color: ${theme.colors.primaryColor} !important;
   }
 
   ${TextComponent}{
@@ -66,6 +71,7 @@ ${({ theme }) => css`
     resize: none;
     outline: none;
     border: 0.1rem solid ${theme.colors.gray_100};
+    background: ${theme.colors.white};
     transition: all 300ms ease-in-out;
 
     &:focus{

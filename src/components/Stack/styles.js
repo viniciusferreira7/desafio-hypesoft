@@ -3,10 +3,11 @@ import { Title as Heading } from '../Heading/styles';
 
 export const Container = styled.div`
 ${({ theme }) => css`
-  padding-top: 18.8rem;
+  margin-top: 18.8rem;
 
   @media ${theme.media.lteMedium}{
-    padding-top: 5rem;
+    margin-top: 5rem;
+    padding-top: 0;
   }
 
   > ${Heading}{
@@ -35,5 +36,6 @@ ${() => css`
   align-content: center;
   align-items: center;
   padding-top: 5rem;
+
 `}
 `;
