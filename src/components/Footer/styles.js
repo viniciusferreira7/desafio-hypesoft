@@ -10,8 +10,8 @@ ${({ theme }) => css`
     text-align: center;
 
     @media ${theme.media.lteMedium}{
-      margin-top: 3rem;
-      margin-bottom: 2.4rem;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
     }
 
   > img{

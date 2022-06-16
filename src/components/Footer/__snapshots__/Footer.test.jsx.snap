@@ -37,8 +37,8 @@ exports[`<Footer/> should match snapshot 1`] = `
 
 @media (max-width:768px) {
   .c0 {
-    margin-top: 3rem;
-    margin-bottom: 2.4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 }
 

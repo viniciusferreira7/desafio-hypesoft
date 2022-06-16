@@ -7,6 +7,7 @@ ${({ theme }) => css`
   display: flex;
   margin-top: 20rem;
   justify-content: space-around;
+  align-items: center;
 
   @media ${theme.media.lteMedium}{
     flex-direction: column;

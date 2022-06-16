@@ -14,7 +14,8 @@ ${({ theme }) => css`
 
   @media ${theme.media.lteMedium}{
       max-height:auto;
-      padding-top: 3rem
+      padding-top: 3rem;
+      max-height:50rem;
     }
 
  >  ${GridDot}{
@@ -35,7 +36,7 @@ ${({ theme }) => css`
         width: 100%;
         text-align: center;
         height: 15rem;
-        margin-bottom: 7rem;
+        margin-bottom: 15rem;
       }
 
       > span{
@@ -51,7 +52,7 @@ ${({ theme }) => css`
       width: 17.7rem;
       height: 5.6rem;
       margin: 0 auto;
-      margin-top: 7.2rem;
+      margin-top: 7.5rem;
 
       > a{
         margin-right: 0.9rem;
